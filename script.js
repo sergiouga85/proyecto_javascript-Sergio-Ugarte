@@ -116,7 +116,7 @@ function calcular(){
     nuevaResistencia = new resistencia(primerColor,segundoColor,tercerColor,cuartoColor);
     console.log (nuevaResistencia.calcularCuatroBandas(),nuevaResistencia.ToleranciaCuatroBandas());  
     mostrarValor=document.getElementById("valorResistivo");
-    mostrarValor.value= (nuevaResistencia.calcularCuatroBandas() +" "+ nuevaResistencia.ToleranciaCuatroBandas());
+    mostrarValor.value= ('Resistencia de '+nuevaResistencia.calcularCuatroBandas() +" con "+ nuevaResistencia.ToleranciaCuatroBandas()+" de Tolerancia");
 }
 
 

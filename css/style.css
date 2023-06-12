@@ -113,3 +113,17 @@ footer .parrafo-pie{
 }
 
 
+@media screen and (max-width:500px) {
+
+    .parrafo{
+        max-width: 340px; 
+    }
+
+    .formulario { 
+        width:340px;
+    } 
+
+    .btn {
+        width: 300px;
+    }
+}
