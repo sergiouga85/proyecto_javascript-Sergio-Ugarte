@@ -1,47 +1,116 @@
 
-let btn_Cuatro_Bandas= document.getElementById("btnCuatroBandas");
+let selectorPrimerColorUno = document.getElementById("primeraBandaUno");
+let selectorPrimerColorDos = document.getElementById("primeraBandaDos");
+let selectorPrimerColorTres = document.getElementById("primeraBandaTres");
 
-let btn_Cinco_Bandas= document.getElementById("btnCincoBandas");
+let selectorSegundoColorUno = document.getElementById("segundaBandaUno");
+let selectorSegundoColorDos = document.getElementById("segundaBandaDos");
+let selectorSegundoColorTres = document.getElementById("segundaBandaTres");
 
-let btn_Seis_Bandas= document.getElementById("btnCincoBandas");
+let selectorTercerColorUno = document.getElementById("terceraBandaUno");
+let selectorTercerColorDos = document.getElementById("terceraBandaDos");
+let selectorTercerColorTres = document.getElementById("terceraBandaTres");
 
-let cuatroBandas;
+let selectorCuartoColorUno = document.getElementById("cuartaBandaUno");
+let selectorCuartoColorDos = document.getElementById("cuartaBandaDos");
+let selectorCuartoColorTres = document.getElementById("cuartaBandaTres");
 
+let selectorQuintoColorUno = document.getElementById("quintaBandaUno");
+let selectorQuintoColorDos = document.getElementById("quintaBandaDos");
 
-btn_Cuatro_Bandas.addEventListener("click",function(e){
-
-    console.log("Seleccionaste la pestaña para calcular Resistencia de 4 bandas");  
+let selectorSestoColor = document.getElementById("sestaBanda");
     
-});
-
-let selectorPrimerColor = document.getElementById("primeraBanda");
-let selectorSegundoColor = document.getElementById("segundaBanda");
-let selectorTercerColor = document.getElementById("terceraBanda");
-let selectorCuartoColor = document.getElementById("cuartaBanda");
     
-    
-let primerColor= selectorPrimerColor.addEventListener("change",function(e){
-        primerColor=selectorPrimerColor.value;
-        return primerColor;
+let primerColorUno= selectorPrimerColorUno.addEventListener("change",(e)=>{
+        primerColorUno= selectorPrimerColorUno.value;
+        console.log(primerColorUno);
+        return primerColorUno;
+});
+
+let primerColorDos= selectorPrimerColorDos.addEventListener("change",(e)=>{
+    primerColorDos=selectorPrimerColorDos.value;
+    console.log(primerColorDos);
+    return primerColorDos;
+});
+
+let primerColorTres= selectorPrimerColorTres.addEventListener("change",(e)=>{
+    primerColorTres=selectorPrimerColorTres.value;
+    console.log(primerColorTres);
+    return primerColorTres;
 });
 
 
-let segundoColor= selectorSegundoColor.addEventListener("change",function(e){
-        segundoColor= selectorSegundoColor.value;
-        return segundoColor;
+let segundoColorUno= selectorSegundoColorUno.addEventListener("change",(e)=>{
+        segundoColorUno= selectorSegundoColorUno.value;
+        console.log(segundoColorUno);
+        return segundoColorUno;
+});
+
+let segundoColorDos= selectorSegundoColorDos.addEventListener("change",(e)=>{
+    segundoColorDos= selectorSegundoColorDos.value;
+    console.log(segundoColorDos);
+    return segundoColorDos;
+});
+
+let segundoColorTres= selectorSegundoColorTres.addEventListener("change",(e)=>{
+    segundoColorTres= selectorSegundoColorTres.value;
+    console.log(segundoColorTres);
+    return segundoColorTres;
 });
 
 
-let tercerColor= selectorTercerColor.addEventListener("change",function(e){
-        tercerColor= selectorTercerColor.value;
-        return tercerColor;
+let tercerColorUno= selectorTercerColorUno.addEventListener("change",(e)=>{
+    tercerColorUno= selectorTercerColorUno.value;
+    console.log(tercerColorUno);
+    return tercerColorUno;
 });
 
+let tercerColorDos= selectorTercerColorDos.addEventListener("change",(e)=>{
+    tercerColorDos= selectorTercerColorDos.value;
+    console.log(tercerColorDos);
+    return tercerColorDos;
+});
 
-let cuartoColor= selectorCuartoColor.addEventListener("change",function(e){
-        cuartoColor= selectorCuartoColor.value;
-        return cuartoColor;
+let tercerColorTres= selectorTercerColorTres.addEventListener("change",(e)=>{
+    tercerColorTres= selectorTercerColorTres.value;
+    console.log(tercerColorTres);
+    return tercerColorTres;
+});
+
+let cuartoColorUno= selectorCuartoColorUno.addEventListener("change",(e)=>{
+    cuartoColorUno= selectorCuartoColorUno.value;
+    console.log(cuartoColorUno);
+    return cuartoColorUno;
 });   
+
+let cuartoColorDos= selectorCuartoColorDos.addEventListener("change",(e)=>{
+    cuartoColorDos= selectorCuartoColorDos.value;
+    console.log(cuartoColorDos);
+    return cuartoColorDos;
+});  
+
+let cuartoColorTres= selectorCuartoColorTres.addEventListener("change",(e)=>{
+    cuartoColorTres= selectorCuartoColorTres.value;
+    console.log(cuartoColorTres);
+    return cuartoColorTres;
+});  
+
+let quintoColorUno= selectorQuintoColorUno.addEventListener("change",(e)=>{
+    quintoColorUno= selectorQuintoColorUno.value;
+    console.log(quintoColorUno);
+    return quintoColorUno;
+});
+
+let quintoColorDos= selectorQuintoColorDos.addEventListener("change",(e)=>{
+    quintoColorDos= selectorQuintoColorDos.value;
+    console.log(quintoColorDos);
+    return quintoColorDos;
+});
+
+let sestoColorColor= selectorSestoColor.addEventListener("change",(e)=>{
+    sestoColor= selectorSestoColor.value;
+    return sestoColor;
+});
 
 
 let Resistencia=[
@@ -79,52 +148,128 @@ let PPM=[
 
 /* OBJETO CONSTRUCTOR*/ 
 
-class resistencia {
+class resistenciaCuatro {
 
-    constructor(primerColor,segundoColor,tercerColor,cuartoColor,quintoColor,sestoColor){
-        this.primerColor = primerColor;
-        this.segundoColor = segundoColor;
-        this.tercerColor= tercerColor;
-        this.cuartoColor= cuartoColor;
-        this.quintoColor= quintoColor;
-        this.sestoColor= sestoColor;
+    constructor(primerColorUno,segundoColorUno,tercerColorUno,cuartoColorUno){
+        this.primerColorUno = primerColorUno;
+        this.segundoColorUno = segundoColorUno;
+        this.tercerColorUno= tercerColorUno;
+        this.cuartoColorUno= cuartoColorUno;
     }
 
     calcularCuatroBandas(){
 
-        let bandaUno = Resistencia.find((obj_Resistencia)=> obj_Resistencia.color == this.primerColor).numero;
-        let bandaDos = Resistencia.find((obj_Resistencia)=> obj_Resistencia.color == this.segundoColor).numero; 
-        let bandaTres = Resistencia.find((obj_Resistencia)=> obj_Resistencia.color == this.tercerColor).multiplicador;
-        let Unidad= Resistencia.find((obj_Resistencia)=> obj_Resistencia.color == this.tercerColor).unidad;
-        let ValorDeResistencia = (bandaUno+bandaDos)* bandaTres + Unidad;
-        return ValorDeResistencia
+        let bandaUno = Resistencia.find((obj_Resistencia)=> obj_Resistencia.color == this.primerColorUno).numero;
+        let bandaDos = Resistencia.find((obj_Resistencia)=> obj_Resistencia.color == this.segundoColorUno).numero;
+        let bandaTres = Resistencia.find((obj_Resistencia)=> obj_Resistencia.color == this.tercerColorUno).multiplicador;
+        let Unidad= Resistencia.find((obj_Resistencia)=> obj_Resistencia.color == this.tercerColorUno).unidad;
+        let ValorDeResistenciaCuatro = (bandaUno+bandaDos)* bandaTres + Unidad;
+        return ValorDeResistenciaCuatro
     }
 
     ToleranciaCuatroBandas(){
         
-        let bandaCuatro = Tolerancia.find((obj_Tolerancia)=> obj_Tolerancia.color == this.cuartoColor).porcentaje;
+        let bandaCuatro = Tolerancia.find((obj_Tolerancia)=> obj_Tolerancia.color == this.cuartoColorUno).porcentaje;
         return bandaCuatro
+    }  
+}
+
+class resistenciaCinco{
+
+    constructor(primerColorDos,segundoColorDos,tercerColorDos,cuartoColorDos,quintoColorUno){
+        this.primerColorDos = primerColorDos;
+        this.segundoColorDos = segundoColorDos;
+        this.tercerColorDos= tercerColorDos;
+        this.cuartoColorDos= cuartoColorDos;
+        this.quintoColorUno= quintoColorUno;
+    }
+
+    calcularCincoBandas(){
+
+        let bandaUno = Resistencia.find((obj_Resistencia)=> obj_Resistencia.color == this.primerColorDos).numero;
+        let bandaDos = Resistencia.find((obj_Resistencia)=> obj_Resistencia.color == this.segundoColorDos).numero;
+        let bandaTres = Resistencia.find((obj_Resistencia)=> obj_Resistencia.color == this.tercerColorDos).numero;
+        let bandaCuatro = Resistencia.find((obj_Resistencia)=> obj_Resistencia.color == this.cuartoColorDos).multiplicador;
+        let Unidad= Resistencia.find((obj_Resistencia)=> obj_Resistencia.color == this.cuartoColorDos).unidad;
+        let ValorDeResistenciaCinco = (bandaUno+bandaDos+bandaTres)* bandaCuatro + Unidad;
+        return ValorDeResistenciaCinco
+    }
+
+    ToleranciaCincoBandas(){   
+        let bandaCinco = Tolerancia.find((obj_Tolerancia)=> obj_Tolerancia.color == this.quintoColorUno).porcentaje;
+        return bandaCinco
+    }
+
+}
+
+class resistenciaSeis{
+
+    constructor(primerColorTres,segundoColorTres,tercerColorTres,cuartoColorTres,quintoColorDos,sestoColor){
+        this.primerColorTres = primerColorTres;
+        this.segundoColorTres = segundoColorTres;
+        this.tercerColorTres = tercerColorTres;
+        this.cuartoColorTres = cuartoColorTres;
+        this.quintoColorDos = quintoColorDos;
+        this.sestoColor = sestoColor;
+    }
+
+    calcularSeisBandas(){
+
+        let bandaUno = Resistencia.find((obj_Resistencia)=> obj_Resistencia.color == this.primerColorTres).numero;
+        let bandaDos = Resistencia.find((obj_Resistencia)=> obj_Resistencia.color == this.segundoColorTres).numero; 
+        let bandaTres = Resistencia.find((obj_Resistencia)=> obj_Resistencia.color == this.tercerColorTres).numero;
+        let bandaCuatro = Resistencia.find((obj_Resistencia)=> obj_Resistencia.color == this.cuartoColorTres).multiplicador;
+        let Unidad= Resistencia.find((obj_Resistencia)=> obj_Resistencia.color == this.tercerColorTres).unidad;
+        let ValorDeResistencia = (bandaUno+bandaDos+bandaTres)* bandaCuatro + Unidad;
+        return ValorDeResistencia
+    }
+
+    ToleranciaSeisBandas(){
+        
+        let bandaCinco = Tolerancia.find((obj_Tolerancia)=> obj_Tolerancia.color == this.quintoColorDos).porcentaje;
+        return bandaCinco
+    }
+
+    coeficienteDeTemperatura(){
+        let bandaSeis = PPM.find((obj_PPM)=> obj_PPM.color == this.sestoColor).coeficiente;
+        return bandaSeis
     }
 }
 
 let nuevaResistencia;
-let valor;
+let mostrarValor;
 
-
-
-function calcular(){
-    nuevaResistencia = new resistencia(primerColor,segundoColor,tercerColor,cuartoColor);
+function calcularResCuatroBandas(){
+    nuevaResistencia = new resistenciaCuatro(primerColorUno,segundoColorUno,tercerColorUno,cuartoColorUno);
     console.log (nuevaResistencia.calcularCuatroBandas(),nuevaResistencia.ToleranciaCuatroBandas());  
-    mostrarValor=document.getElementById("valorResistivo");
+    mostrarValor=document.getElementById("valorResistivoCuatro");
     mostrarValor.value= ('Resistencia de '+nuevaResistencia.calcularCuatroBandas() +" con "+ nuevaResistencia.ToleranciaCuatroBandas()+" de Tolerancia");
 }
 
+let btnCalcularCuatroBandas= document.getElementById("btnCalcularCuatroBandas");
+btnCalcularCuatroBandas.addEventListener("click", calcularResCuatroBandas); 
 
-let btnCalcular= document.getElementById("btnCalcular");
+function calcularResCincoBandas(){
+    nuevaResistencia = new resistenciaCinco(primerColorDos,segundoColorDos,tercerColorDos,cuartoColorDos,quintoColorUno);
+    console.log (nuevaResistencia.calcularCincoBandas(),nuevaResistencia.ToleranciaCincoBandas());  
+    mostrarValor=document.getElementById("valorResistivoCinco");
+    mostrarValor.value= ('Resistencia de '+nuevaResistencia.calcularCincoBandas() +" con "+ nuevaResistencia.ToleranciaCincoBandas()+" de Tolerancia");
+}
 
-btnCalcular.addEventListener("click", calcular); 
+let btnCalcularCincoBandas= document.getElementById("btnCalcularCincoBandas");
 
+btnCalcularCincoBandas.addEventListener("click", calcularResCincoBandas); 
 
+function calcularResSeisBandas(){
+    nuevaResistencia = new resistenciaSeis(primerColorTres,segundoColorTres,tercerColorTres,cuartoColorTres,quintoColorDos,sestoColor);
+    console.log (nuevaResistencia.calcularSeisBandas(),nuevaResistencia.ToleranciaSeisBandas());  
+    mostrarValor=document.getElementById("valorResistivoSeis");
+    mostrarValor.value= ('Resistencia de '+nuevaResistencia.calcularSeisBandas() +" con "+ nuevaResistencia.ToleranciaSeisBandas()+" de Tolerancia");
+}
+
+let btnCalcularSeisBandas= document.getElementById("btnCalcularSeisBandas");
+
+btnCalcularSeisBandas.addEventListener("click", calcularResSeisBandas); 
 
 
 
