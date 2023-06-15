@@ -7,7 +7,7 @@
 header{
     display:flex;
     height: 150px;
-    background-color: rgb(64, 64, 55);
+    background-color: rgb(32, 32, 32);
 }
 
 header .nav-link {
@@ -19,16 +19,21 @@ header .nav-link:hover {
     color: goldenrod;
 }
 
+.logotipo img{
+    width: 200px;
+    height: 70px;
+}
+
 
 section{
-    padding-top: 30px;
+   
     padding-bottom: 60px;
-    background-color:darkkhaki;
+    background-color:rgb(151, 139, 91);
 }
 
 .parrafo{
     display:grid;
-    margin: 0px auto;
+    margin: 20px auto;
     max-width: 460px;
     padding: 20px;
     gap:25px;
@@ -40,16 +45,37 @@ section{
     align-items: center; 
 }
 
-.parrafo h1, h4 {
+.titulo-h1 {
+    background-color:rgb(58, 55, 47);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width:100%;
+    margin: 0px auto;
+    padding: 20px;
+    font-size:30px ;
+        
+}
+
+
+
+.titulo-h1 h1 {
+    font-size: 25px;
+    color: white;
+}
+
+.parrafo h4 {
     font-size: 19px;
-    color: rgb(64, 64, 55);
+    color: white;
 }
 
 
 
 .parrafo p{
     font-size: 18px;
-    color: rgb(64, 64, 55);
+    color:white;
+    padding: 10px;
 }
 
 
@@ -62,14 +88,16 @@ section{
     font-size: 18px;
 }
 
-.formulario {
+.formulario, .parrafo {
     background-color:rgb(64, 64, 55);
     opacity: .7;
     width:430px;
-    margin: 0 auto;
+    margin: 10px auto;
     padding: 20px;
-    border-radius: 10px;  
+    border-radius: 10px;    
 }
+
+
 
 
 .campo {
@@ -98,7 +126,7 @@ section{
 }
 
 #historial{
-    background-color: rgb(68, 62, 41);
+    background-color: rgb(64, 64, 55);
     text-align: center;
     padding-top: 20px;
     padding-bottom: 20px;
@@ -114,8 +142,21 @@ section{
     color: white;
 }
 
+.titulo-h4{
+    background-color:rgb(58, 55, 47);
+    margin: 0 auto;
+    width: 430px;
+    border-radius: 10px;  
+    
+}
+
+.titulo-h4 h4{
+    color: white;
+}
+
 #historial p{
     color:white;
+    padding: 15px;
 }
 
 #valorResistivoSeis{

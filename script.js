@@ -297,7 +297,7 @@ btnHistorialCuatro.addEventListener("click", (e)=>{
     const lista = document.getElementById("parrafohistorial");
     const fragmento =document.createDocumentFragment();
     const parrafo_historial = document.createElement("p");
-    parrafo_historial.textContent= ('Resistencia de '+nuevaResistencia.calcularCuatroBandas()+" con "+nuevaResistencia.ToleranciaCuatroBandas()+" de Tolerancia ");
+    parrafo_historial.textContent= arregloHistorial[arregloHistorial.length-1];
     parrafo_historial.Id='parrafoHistorial';
     console.log(parrafo_historial);
     fragmento.appendChild(parrafo_historial);
@@ -329,7 +329,7 @@ btnHistorialCinco.addEventListener("click", (e)=>{
     const lista = document.getElementById("parrafohistorial");
     const fragmento =document.createDocumentFragment();
     const parrafo_historial = document.createElement("p");
-    parrafo_historial.textContent= ('Resistencia de '+nuevaResistencia.calcularCincoBandas()+" con "+nuevaResistencia.ToleranciaCincoBandas()+" de Tolerancia ");
+    parrafo_historial.textContent= arregloHistorial[arregloHistorial.length-1];
     console.log(parrafo_historial);
     fragmento.appendChild(parrafo_historial);
     lista.appendChild(fragmento);
@@ -358,7 +358,7 @@ btnHistorialSeis.addEventListener("click", (e)=>{
     const lista = document.getElementById("parrafohistorial");
     const fragmento =document.createDocumentFragment();
     const parrafo_historial = document.createElement("p");
-    parrafo_historial.textContent= ('Resistencia de '+nuevaResistencia.calcularSeisBandas() +" con "+ nuevaResistencia.ToleranciaSeisBandas()+" de Tolerancia con un coeficiente de temperatura de " + nuevaResistencia.coeficienteDeTemperatura());
+    parrafo_historial.textContent= arregloHistorial[arregloHistorial.length-1];
     console.log(parrafo_historial);
     fragmento.appendChild(parrafo_historial);
     lista.appendChild(fragmento);
