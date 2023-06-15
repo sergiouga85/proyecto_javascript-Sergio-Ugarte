@@ -118,16 +118,9 @@ section{
     color:white;
 }
 
-
-
-
-
-
 #valorResistivoSeis{
     height: 70px;
 }
-
-
 
 /*ESTILOS FOOTER*/
 
@@ -156,7 +149,7 @@ footer .parrafo-pie{
         max-width: 340px; 
     }
 
-    .formulario { 
+    .formulario, #historial { 
         width:340px;
     } 
 

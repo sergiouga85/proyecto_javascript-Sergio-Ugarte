@@ -287,7 +287,6 @@ let btnCalcularSeisBandas= document.getElementById("btnCalcularSeisBandas");
 
 btnCalcularSeisBandas.addEventListener("click", calcularResSeisBandas);
 
-
 let btnHistorialCuatro=document.getElementById("btnHistorialCuatro");
 
 btnHistorialCuatro.addEventListener("click", (e)=>{
@@ -295,35 +294,30 @@ btnHistorialCuatro.addEventListener("click", (e)=>{
     let arregloHistorial=localStorage.getItem("listaResistencia");
     arregloHistorial = JSON.parse(arregloHistorial);
     console.log(arregloHistorial);
-
-    const lista = document.getElementById("historial");
-
+    const lista = document.getElementById("parrafohistorial");
     const fragmento =document.createDocumentFragment();
-
-    arregloHistorial.forEach(historial => { 
-        const parrafo_historial = document.createElement("p");
-        parrafo_historial.textContent= historial;
-        parrafo_historial.className='parrafoHistorial';
-        console.log(parrafo_historial);
-        fragmento.appendChild(parrafo_historial);
-    });
-    
+    const parrafo_historial = document.createElement("p");
+    parrafo_historial.textContent= ('Resistencia de '+nuevaResistencia.calcularCuatroBandas()+" con "+nuevaResistencia.ToleranciaCuatroBandas()+" de Tolerancia ");
+    parrafo_historial.Id='parrafoHistorial';
+    console.log(parrafo_historial);
+    fragmento.appendChild(parrafo_historial);
     lista.appendChild(fragmento);
+
 
 }); 
 
 let clearHistorialCuatro=document.getElementById("clearHistorialCuatro");
 
+
 clearHistorialCuatro.addEventListener("click", (e)=>{
 
-    
     localStorage.clear();
     listaResistencia=[];
-    const listaHistorial=document.getElementsByClassName('parrafoHistorial');
-    console.log(listaHistorial);
-    
- 
+    const borrarHistorial =document.getElementById("parrafohistorial");
+    borrarHistorial.innerHTML = "";
+
 });
+
 
 let btnHistorialCinco=document.getElementById("btnHistorialCinco");
 
@@ -332,18 +326,12 @@ btnHistorialCinco.addEventListener("click", (e)=>{
     let arregloHistorial=localStorage.getItem("listaResistencia");
     arregloHistorial = JSON.parse(arregloHistorial);
     console.log(arregloHistorial);
-
-    const lista = document.getElementById("historial");
-
+    const lista = document.getElementById("parrafohistorial");
     const fragmento =document.createDocumentFragment();
-
-    arregloHistorial.forEach(historial => { 
-        const parrafo_historial = document.createElement("p");
-        parrafo_historial.textContent= historial;
-        console.log(parrafo_historial);
-        fragmento.appendChild(parrafo_historial);
-    });
-    
+    const parrafo_historial = document.createElement("p");
+    parrafo_historial.textContent= ('Resistencia de '+nuevaResistencia.calcularCincoBandas()+" con "+nuevaResistencia.ToleranciaCincoBandas()+" de Tolerancia ");
+    console.log(parrafo_historial);
+    fragmento.appendChild(parrafo_historial);
     lista.appendChild(fragmento);
 
 }); 
@@ -353,6 +341,10 @@ let clearHistoriaCinco=document.getElementById("clearHistorialCinco");
 clearHistoriaCinco.addEventListener("click", (e)=>{
 
     localStorage.clear();
+    listaResistencia=[];
+    const borrarHistorial =document.getElementById("parrafohistorial");
+    borrarHistorial.innerHTML = "";
+
 
 });
 
@@ -363,20 +355,13 @@ btnHistorialSeis.addEventListener("click", (e)=>{
     let arregloHistorial=localStorage.getItem("listaResistencia");
     arregloHistorial = JSON.parse(arregloHistorial);
     console.log(arregloHistorial);
-
-    const lista = document.getElementById("historial");
-
+    const lista = document.getElementById("parrafohistorial");
     const fragmento =document.createDocumentFragment();
-
-    arregloHistorial.forEach(historial => { 
-        const parrafo_historial = document.createElement("p");
-        parrafo_historial.textContent= historial;
-        console.log(parrafo_historial);
-        fragmento.appendChild(parrafo_historial);
-    });
-    
+    const parrafo_historial = document.createElement("p");
+    parrafo_historial.textContent= ('Resistencia de '+nuevaResistencia.calcularSeisBandas() +" con "+ nuevaResistencia.ToleranciaSeisBandas()+" de Tolerancia con un coeficiente de temperatura de " + nuevaResistencia.coeficienteDeTemperatura());
+    console.log(parrafo_historial);
+    fragmento.appendChild(parrafo_historial);
     lista.appendChild(fragmento);
-
 }); 
 
 let clearHistoriaSeis=document.getElementById("clearHistorialSeis");
@@ -384,6 +369,10 @@ let clearHistoriaSeis=document.getElementById("clearHistorialSeis");
 clearHistoriaSeis.addEventListener("click", (e)=>{
 
     localStorage.clear();
-
+    listaResistencia=[];
+    const borrarHistorial =document.getElementById("parrafohistorial");
+    borrarHistorial.innerHTML = "";
 
 });
+
+
