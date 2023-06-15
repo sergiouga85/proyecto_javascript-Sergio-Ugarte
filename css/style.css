@@ -93,6 +93,42 @@ section{
     width: 390px;
 }
 
+#btnHistorialCuatro, #btnHistorialCinco, #btnHistorialSeis{
+    margin:15px auto;
+}
+
+#historial{
+    background-color: rgb(68, 62, 41);
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    opacity: .7;
+    margin: 0 auto;
+    height: 100%;
+    width: 430px;
+    margin-top: 20px;
+    border-radius: 10px;  
+}
+
+.tituloHistorial{
+    color: white;
+}
+
+#historial p{
+    color:white;
+}
+
+
+
+
+
+
+#valorResistivoSeis{
+    height: 70px;
+}
+
+
+
 /*ESTILOS FOOTER*/
 
 footer{

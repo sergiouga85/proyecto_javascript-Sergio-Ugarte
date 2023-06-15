@@ -236,84 +236,154 @@ class resistenciaSeis{
     }
 }
 
+let listaResistencia =[];
 let nuevaResistencia;
 let mostrarValor;
+let listaResistenciaJSON=[];
 
 function calcularResCuatroBandas(){
     nuevaResistencia = new resistenciaCuatro(primerColorUno,segundoColorUno,tercerColorUno,cuartoColorUno);
-    console.log (nuevaResistencia.calcularCuatroBandas(),nuevaResistencia.ToleranciaCuatroBandas());  
+    console.log (nuevaResistencia.calcularCuatroBandas(),nuevaResistencia.ToleranciaCuatroBandas()); 
+    listaResistencia.push('Resistencia de '+nuevaResistencia.calcularCuatroBandas()+" con "+nuevaResistencia.ToleranciaCuatroBandas()+" de Tolerancia");   
     mostrarValor=document.getElementById("valorResistivoCuatro");
     mostrarValor.value= ('Resistencia de '+nuevaResistencia.calcularCuatroBandas() +" con "+ nuevaResistencia.ToleranciaCuatroBandas()+" de Tolerancia");
+    listaResistenciaJSON= JSON.stringify(listaResistencia);
+    localStorage.setItem("listaResistencia",listaResistenciaJSON)
 }
 
 let btnCalcularCuatroBandas= document.getElementById("btnCalcularCuatroBandas");
 btnCalcularCuatroBandas.addEventListener("click", calcularResCuatroBandas); 
 
 function calcularResCincoBandas(){
+
     nuevaResistencia = new resistenciaCinco(primerColorDos,segundoColorDos,tercerColorDos,cuartoColorDos,quintoColorUno);
-    console.log (nuevaResistencia.calcularCincoBandas(),nuevaResistencia.ToleranciaCincoBandas());  
+    console.log (nuevaResistencia.calcularCincoBandas()  +" con "+nuevaResistencia.ToleranciaCincoBandas()); 
+    listaResistencia.push('Resistencia de '+nuevaResistencia.calcularCincoBandas()+" con "+nuevaResistencia.ToleranciaCincoBandas()+"de Tolerancia"); 
     mostrarValor=document.getElementById("valorResistivoCinco");
-    mostrarValor.value= ('Resistencia de '+nuevaResistencia.calcularCincoBandas() +" con "+ nuevaResistencia.ToleranciaCincoBandas()+" de Tolerancia");
+    mostrarValor.value= ('Resistencia de '+nuevaResistencia.calcularCincoBandas() +" con "+ nuevaResistencia.ToleranciaCincoBandas()+" de Tolerancia");+" de Tolerancia"
+    listaResistenciaJSON= JSON.stringify(listaResistencia);
+    localStorage.setItem("listaResistencia",listaResistenciaJSON);
+    
 }
 
 let btnCalcularCincoBandas= document.getElementById("btnCalcularCincoBandas");
 
 btnCalcularCincoBandas.addEventListener("click", calcularResCincoBandas); 
 
+
 function calcularResSeisBandas(){
+
     nuevaResistencia = new resistenciaSeis(primerColorTres,segundoColorTres,tercerColorTres,cuartoColorTres,quintoColorDos,sestoColor);
-    console.log (nuevaResistencia.calcularSeisBandas(),nuevaResistencia.ToleranciaSeisBandas());  
+    console.log (nuevaResistencia.calcularSeisBandas(),nuevaResistencia.ToleranciaSeisBandas(),nuevaResistencia.coeficienteDeTemperatura()); 
+    listaResistencia.push('Resistencia de '+nuevaResistencia.calcularSeisBandas()+" con "+nuevaResistencia.ToleranciaSeisBandas()+" de Tolerancia con un coeficiente de temperatura de " +nuevaResistencia.coeficienteDeTemperatura()); 
     mostrarValor=document.getElementById("valorResistivoSeis");
-    mostrarValor.value= ('Resistencia de '+nuevaResistencia.calcularSeisBandas() +" con "+ nuevaResistencia.ToleranciaSeisBandas()+" de Tolerancia");
+    mostrarValor.value= ('Resistencia de '+nuevaResistencia.calcularSeisBandas() +" con "+ nuevaResistencia.ToleranciaSeisBandas()+" de Tolerancia con un coeficiente de temperatura de " + nuevaResistencia.coeficienteDeTemperatura());
+    listaResistenciaJSON= JSON.stringify(listaResistencia);
+    localStorage.setItem("listaResistencia",listaResistenciaJSON);
+
 }
 
 let btnCalcularSeisBandas= document.getElementById("btnCalcularSeisBandas");
 
-btnCalcularSeisBandas.addEventListener("click", calcularResSeisBandas); 
+btnCalcularSeisBandas.addEventListener("click", calcularResSeisBandas);
 
 
+let btnHistorialCuatro=document.getElementById("btnHistorialCuatro");
 
+btnHistorialCuatro.addEventListener("click", (e)=>{
 
+    let arregloHistorial=localStorage.getItem("listaResistencia");
+    arregloHistorial = JSON.parse(arregloHistorial);
+    console.log(arregloHistorial);
 
+    const lista = document.getElementById("historial");
 
+    const fragmento =document.createDocumentFragment();
 
+    arregloHistorial.forEach(historial => { 
+        const parrafo_historial = document.createElement("p");
+        parrafo_historial.textContent= historial;
+        parrafo_historial.className='parrafoHistorial';
+        console.log(parrafo_historial);
+        fragmento.appendChild(parrafo_historial);
+    });
+    
+    lista.appendChild(fragmento);
 
+}); 
 
+let clearHistorialCuatro=document.getElementById("clearHistorialCuatro");
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+clearHistorialCuatro.addEventListener("click", (e)=>{
 
     
+    localStorage.clear();
+    listaResistencia=[];
+    const listaHistorial=document.getElementsByClassName('parrafoHistorial');
+    console.log(listaHistorial);
+    
+ 
+});
+
+let btnHistorialCinco=document.getElementById("btnHistorialCinco");
+
+btnHistorialCinco.addEventListener("click", (e)=>{
+
+    let arregloHistorial=localStorage.getItem("listaResistencia");
+    arregloHistorial = JSON.parse(arregloHistorial);
+    console.log(arregloHistorial);
+
+    const lista = document.getElementById("historial");
+
+    const fragmento =document.createDocumentFragment();
+
+    arregloHistorial.forEach(historial => { 
+        const parrafo_historial = document.createElement("p");
+        parrafo_historial.textContent= historial;
+        console.log(parrafo_historial);
+        fragmento.appendChild(parrafo_historial);
+    });
+    
+    lista.appendChild(fragmento);
+
+}); 
+
+let clearHistoriaCinco=document.getElementById("clearHistorialCinco");
+
+clearHistoriaCinco.addEventListener("click", (e)=>{
+
+    localStorage.clear();
+
+});
+
+let btnHistorialSeis=document.getElementById("btnHistorialSeis");
+
+btnHistorialSeis.addEventListener("click", (e)=>{
+
+    let arregloHistorial=localStorage.getItem("listaResistencia");
+    arregloHistorial = JSON.parse(arregloHistorial);
+    console.log(arregloHistorial);
+
+    const lista = document.getElementById("historial");
+
+    const fragmento =document.createDocumentFragment();
+
+    arregloHistorial.forEach(historial => { 
+        const parrafo_historial = document.createElement("p");
+        parrafo_historial.textContent= historial;
+        console.log(parrafo_historial);
+        fragmento.appendChild(parrafo_historial);
+    });
+    
+    lista.appendChild(fragmento);
+
+}); 
+
+let clearHistoriaSeis=document.getElementById("clearHistorialSeis");
+
+clearHistoriaSeis.addEventListener("click", (e)=>{
+
+    localStorage.clear();
 
 
-
-
-
-
-
-
-
-
+});
