@@ -5,7 +5,7 @@
 }
 
 header{
-    display:flex;
+    display: flex;
     height: 150px;
     background-color: rgb(32, 32, 32);
 }
@@ -21,7 +21,8 @@ header .nav-link:hover {
 
 .logotipo img{
     width: 200px;
-    height: 70px;
+    height: 65px;
+    padding-right: 20px;
 }
 
 
@@ -34,7 +35,7 @@ section{
 .parrafo{
     display:grid;
     margin: 20px auto;
-    max-width: 460px;
+    max-width: 85%;
     padding: 20px;
     gap:25px;
 }
@@ -58,10 +59,17 @@ section{
         
 }
 
+.tituloHistorial{
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 
 
 .titulo-h1 h1 {
-    font-size: 25px;
+    font-size: 22px;
     color: white;
 }
 
@@ -88,17 +96,14 @@ section{
     font-size: 18px;
 }
 
-.formulario, .parrafo {
+.formulario, .parrafo , #historial{
     background-color:rgb(64, 64, 55);
     opacity: .7;
-    width:430px;
+    width:500px;
     margin: 10px auto;
     padding: 20px;
     border-radius: 10px;    
 }
-
-
-
 
 .campo {
     margin-bottom: 10px;
@@ -118,24 +123,11 @@ section{
 }
 
 .btn {
-    width: 390px;
+    width: 100%;
 }
 
 #btnHistorialCuatro, #btnHistorialCinco, #btnHistorialSeis{
     margin:15px auto;
-}
-
-#historial{
-    background-color: rgb(64, 64, 55);
-    text-align: center;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    opacity: .7;
-    margin: 0 auto;
-    height: 100%;
-    width: 430px;
-    margin-top: 20px;
-    border-radius: 10px;  
 }
 
 .tituloHistorial{
@@ -145,7 +137,7 @@ section{
 .titulo-h4{
     background-color:rgb(58, 55, 47);
     margin: 0 auto;
-    width: 430px;
+    width: 500px;
     border-radius: 10px;  
     
 }
@@ -156,7 +148,7 @@ section{
 
 #historial p{
     color:white;
-    padding: 15px;
+    text-align: center;
 }
 
 #valorResistivoSeis{
@@ -184,17 +176,42 @@ footer .parrafo-pie{
 }
 
 
-@media screen and (max-width:500px) {
-
-    .parrafo{
-        max-width: 340px; 
+@media screen and (max-width:768px) {
+    
+    header{
+        height:270px;
+    }
+    
+    .container, .nav{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 15px;
     }
 
-    .formulario, #historial { 
-        width:340px;
+    .formulario, #historial,.titulo-h4, .parrafo{ 
+        width:85%;
     } 
 
+    .titulo-h1 {
+        width: 100%;
+    }
+
+    .titulo-h1 h1 {
+        font-size: 13px;
+    }
+
+
+    .titulo-h4 {
+        width: 85%;
+        
+    }
+
+    .titulo-h4 h4{
+        font-size: 13px;
+    }
+
     .btn {
-        width: 300px;
+        width: 100%;
     }
 }
