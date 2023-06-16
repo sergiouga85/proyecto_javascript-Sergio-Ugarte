@@ -19,8 +19,7 @@ let selectorQuintoColorUno = document.getElementById("quintaBandaUno");
 let selectorQuintoColorDos = document.getElementById("quintaBandaDos");
 
 let selectorSestoColor = document.getElementById("sestaBanda");
-    
-    
+      
 let primerColorUno= selectorPrimerColorUno.addEventListener("change",(e)=>{
         primerColorUno= selectorPrimerColorUno.value;
         console.log(primerColorUno);
@@ -112,7 +111,6 @@ let sestoColorColor= selectorSestoColor.addEventListener("change",(e)=>{
     return sestoColor;
 });
 
-
 let Resistencia=[
     {color:'NEGRO' , numero:'0', multiplicador:1, unidad:'Ω'},
     {color:'MARRON' , numero:'1', multiplicador:10, unidad:'Ω'},
@@ -149,14 +147,12 @@ let PPM=[
 /* OBJETO CONSTRUCTOR*/ 
 
 class resistenciaCuatro {
-
     constructor(primerColorUno,segundoColorUno,tercerColorUno,cuartoColorUno){
         this.primerColorUno = primerColorUno;
         this.segundoColorUno = segundoColorUno;
         this.tercerColorUno= tercerColorUno;
         this.cuartoColorUno= cuartoColorUno;
     }
-
     calcularCuatroBandas(){
 
         let bandaUno = Resistencia.find((obj_Resistencia)=> obj_Resistencia.color == this.primerColorUno).numero;
@@ -166,7 +162,6 @@ class resistenciaCuatro {
         let ValorDeResistenciaCuatro = (bandaUno+bandaDos)* bandaTres + Unidad;
         return ValorDeResistenciaCuatro
     }
-
     ToleranciaCuatroBandas(){
         
         let bandaCuatro = Tolerancia.find((obj_Tolerancia)=> obj_Tolerancia.color == this.cuartoColorUno).porcentaje;
@@ -175,7 +170,6 @@ class resistenciaCuatro {
 }
 
 class resistenciaCinco{
-
     constructor(primerColorDos,segundoColorDos,tercerColorDos,cuartoColorDos,quintoColorUno){
         this.primerColorDos = primerColorDos;
         this.segundoColorDos = segundoColorDos;
@@ -183,7 +177,6 @@ class resistenciaCinco{
         this.cuartoColorDos= cuartoColorDos;
         this.quintoColorUno= quintoColorUno;
     }
-
     calcularCincoBandas(){
 
         let bandaUno = Resistencia.find((obj_Resistencia)=> obj_Resistencia.color == this.primerColorDos).numero;
@@ -194,16 +187,13 @@ class resistenciaCinco{
         let ValorDeResistenciaCinco = (bandaUno+bandaDos+bandaTres)* bandaCuatro + Unidad;
         return ValorDeResistenciaCinco
     }
-
     ToleranciaCincoBandas(){   
         let bandaCinco = Tolerancia.find((obj_Tolerancia)=> obj_Tolerancia.color == this.quintoColorUno).porcentaje;
         return bandaCinco
     }
-
 }
 
 class resistenciaSeis{
-
     constructor(primerColorTres,segundoColorTres,tercerColorTres,cuartoColorTres,quintoColorDos,sestoColor){
         this.primerColorTres = primerColorTres;
         this.segundoColorTres = segundoColorTres;
@@ -212,7 +202,6 @@ class resistenciaSeis{
         this.quintoColorDos = quintoColorDos;
         this.sestoColor = sestoColor;
     }
-
     calcularSeisBandas(){
 
         let bandaUno = Resistencia.find((obj_Resistencia)=> obj_Resistencia.color == this.primerColorTres).numero;
@@ -223,13 +212,11 @@ class resistenciaSeis{
         let ValorDeResistencia = (bandaUno+bandaDos+bandaTres)* bandaCuatro + Unidad;
         return ValorDeResistencia
     }
-
     ToleranciaSeisBandas(){
         
         let bandaCinco = Tolerancia.find((obj_Tolerancia)=> obj_Tolerancia.color == this.quintoColorDos).porcentaje;
         return bandaCinco
     }
-
     coeficienteDeTemperatura(){
         let bandaSeis = PPM.find((obj_PPM)=> obj_PPM.color == this.sestoColor).coeficiente;
         return bandaSeis
@@ -241,51 +228,44 @@ let nuevaResistencia;
 let mostrarValor;
 let listaResistenciaJSON=[];
 
-function calcularResCuatroBandas(){
+let btnCalcularCuatroBandas= document.getElementById("btnCalcularCuatroBandas");
+
+btnCalcularCuatroBandas.addEventListener("click", (e)=>{
+
     nuevaResistencia = new resistenciaCuatro(primerColorUno,segundoColorUno,tercerColorUno,cuartoColorUno);
     console.log (nuevaResistencia.calcularCuatroBandas(),nuevaResistencia.ToleranciaCuatroBandas()); 
-    listaResistencia.push('Resistencia de '+nuevaResistencia.calcularCuatroBandas()+" con "+nuevaResistencia.ToleranciaCuatroBandas()+" de Tolerancia");   
+    listaResistencia.push(' Resistencia de '+nuevaResistencia.calcularCuatroBandas()+" con "+nuevaResistencia.ToleranciaCuatroBandas()+" de Tolerancia  ");   
     mostrarValor=document.getElementById("valorResistivoCuatro");
     mostrarValor.value= ('Resistencia de '+nuevaResistencia.calcularCuatroBandas() +" con "+ nuevaResistencia.ToleranciaCuatroBandas()+" de Tolerancia");
     listaResistenciaJSON= JSON.stringify(listaResistencia);
-    localStorage.setItem("listaResistencia",listaResistenciaJSON)
-}
-
-let btnCalcularCuatroBandas= document.getElementById("btnCalcularCuatroBandas");
-btnCalcularCuatroBandas.addEventListener("click", calcularResCuatroBandas); 
-
-function calcularResCincoBandas(){
-
-    nuevaResistencia = new resistenciaCinco(primerColorDos,segundoColorDos,tercerColorDos,cuartoColorDos,quintoColorUno);
-    console.log (nuevaResistencia.calcularCincoBandas()  +" con "+nuevaResistencia.ToleranciaCincoBandas()); 
-    listaResistencia.push('Resistencia de '+nuevaResistencia.calcularCincoBandas()+" con "+nuevaResistencia.ToleranciaCincoBandas()+"de Tolerancia"); 
-    mostrarValor=document.getElementById("valorResistivoCinco");
-    mostrarValor.value= ('Resistencia de '+nuevaResistencia.calcularCincoBandas() +" con "+ nuevaResistencia.ToleranciaCincoBandas()+" de Tolerancia");+" de Tolerancia"
-    listaResistenciaJSON= JSON.stringify(listaResistencia);
     localStorage.setItem("listaResistencia",listaResistenciaJSON);
-    
-}
+}); 
 
 let btnCalcularCincoBandas= document.getElementById("btnCalcularCincoBandas");
 
-btnCalcularCincoBandas.addEventListener("click", calcularResCincoBandas); 
+btnCalcularCincoBandas.addEventListener("click", (e)=>{ 
 
+    nuevaResistencia = new resistenciaCinco(primerColorDos,segundoColorDos,tercerColorDos,cuartoColorDos,quintoColorUno);
+    console.log (nuevaResistencia.calcularCincoBandas()  +" con "+nuevaResistencia.ToleranciaCincoBandas()); 
+    listaResistencia.push('  Resistencia de '+nuevaResistencia.calcularCincoBandas()+" con "+nuevaResistencia.ToleranciaCincoBandas()+"de Tolerancia  "); 
+    mostrarValor=document.getElementById("valorResistivoCinco");
+    mostrarValor.value= ('Resistencia de '+nuevaResistencia.calcularCincoBandas() +" con "+ nuevaResistencia.ToleranciaCincoBandas()+" de Tolerancia");
+    listaResistenciaJSON= JSON.stringify(listaResistencia);
+    localStorage.setItem("listaResistencia",listaResistenciaJSON);
+}); 
 
-function calcularResSeisBandas(){
+let btnCalcularSeisBandas= document.getElementById("btnCalcularSeisBandas");
 
+btnCalcularSeisBandas.addEventListener("click", (e)=>{
     nuevaResistencia = new resistenciaSeis(primerColorTres,segundoColorTres,tercerColorTres,cuartoColorTres,quintoColorDos,sestoColor);
     console.log (nuevaResistencia.calcularSeisBandas(),nuevaResistencia.ToleranciaSeisBandas(),nuevaResistencia.coeficienteDeTemperatura()); 
-    listaResistencia.push('Resistencia de '+nuevaResistencia.calcularSeisBandas()+" con "+nuevaResistencia.ToleranciaSeisBandas()+" de Tolerancia con un coeficiente de temperatura de " +nuevaResistencia.coeficienteDeTemperatura()); 
+    listaResistencia.push(' Resistencia de '+nuevaResistencia.calcularSeisBandas()+" con "+nuevaResistencia.ToleranciaSeisBandas()+" de Tolerancia con un coeficiente de temperatura de " +nuevaResistencia.coeficienteDeTemperatura(),"  "); 
     mostrarValor=document.getElementById("valorResistivoSeis");
     mostrarValor.value= ('Resistencia de '+nuevaResistencia.calcularSeisBandas() +" con "+ nuevaResistencia.ToleranciaSeisBandas()+" de Tolerancia con un coeficiente de temperatura de " + nuevaResistencia.coeficienteDeTemperatura());
     listaResistenciaJSON= JSON.stringify(listaResistencia);
     localStorage.setItem("listaResistencia",listaResistenciaJSON);
 
-}
-
-let btnCalcularSeisBandas= document.getElementById("btnCalcularSeisBandas");
-
-btnCalcularSeisBandas.addEventListener("click", calcularResSeisBandas);
+});
 
 let btnHistorialCuatro=document.getElementById("btnHistorialCuatro");
 
@@ -297,17 +277,17 @@ btnHistorialCuatro.addEventListener("click", (e)=>{
     const lista = document.getElementById("parrafohistorial");
     const fragmento =document.createDocumentFragment();
     const parrafo_historial = document.createElement("p");
-    parrafo_historial.textContent= arregloHistorial[arregloHistorial.length-1];
+    const borrarHistorial =document.getElementById("parrafohistorial");
+    borrarHistorial.innerHTML = "";
+    parrafo_historial.textContent=arregloHistorial;
     parrafo_historial.Id='parrafoHistorial';
     console.log(parrafo_historial);
     fragmento.appendChild(parrafo_historial);
     lista.appendChild(fragmento);
 
-
 }); 
 
 let clearHistorialCuatro=document.getElementById("clearHistorialCuatro");
-
 
 clearHistorialCuatro.addEventListener("click", (e)=>{
 
@@ -315,9 +295,7 @@ clearHistorialCuatro.addEventListener("click", (e)=>{
     listaResistencia=[];
     const borrarHistorial =document.getElementById("parrafohistorial");
     borrarHistorial.innerHTML = "";
-
 });
-
 
 let btnHistorialCinco=document.getElementById("btnHistorialCinco");
 
@@ -329,11 +307,13 @@ btnHistorialCinco.addEventListener("click", (e)=>{
     const lista = document.getElementById("parrafohistorial");
     const fragmento =document.createDocumentFragment();
     const parrafo_historial = document.createElement("p");
-    parrafo_historial.textContent= arregloHistorial[arregloHistorial.length-1];
+    const borrarHistorial =document.getElementById("parrafohistorial");
+    borrarHistorial.innerHTML = "";
+    parrafo_historial.textContent=arregloHistorial;
+    parrafo_historial.Id='parrafoHistorial';
     console.log(parrafo_historial);
     fragmento.appendChild(parrafo_historial);
     lista.appendChild(fragmento);
-
 }); 
 
 let clearHistoriaCinco=document.getElementById("clearHistorialCinco");
@@ -344,8 +324,6 @@ clearHistoriaCinco.addEventListener("click", (e)=>{
     listaResistencia=[];
     const borrarHistorial =document.getElementById("parrafohistorial");
     borrarHistorial.innerHTML = "";
-
-
 });
 
 let btnHistorialSeis=document.getElementById("btnHistorialSeis");
@@ -358,7 +336,10 @@ btnHistorialSeis.addEventListener("click", (e)=>{
     const lista = document.getElementById("parrafohistorial");
     const fragmento =document.createDocumentFragment();
     const parrafo_historial = document.createElement("p");
-    parrafo_historial.textContent= arregloHistorial[arregloHistorial.length-1];
+    const borrarHistorial =document.getElementById("parrafohistorial");
+    borrarHistorial.innerHTML = "";
+    parrafo_historial.textContent=arregloHistorial;
+    parrafo_historial.Id='parrafoHistorial';
     console.log(parrafo_historial);
     fragmento.appendChild(parrafo_historial);
     lista.appendChild(fragmento);
@@ -372,7 +353,6 @@ clearHistoriaSeis.addEventListener("click", (e)=>{
     listaResistencia=[];
     const borrarHistorial =document.getElementById("parrafohistorial");
     borrarHistorial.innerHTML = "";
-
 });
 
 
