@@ -295,6 +295,11 @@ clearHistorialCuatro.addEventListener("click", (e)=>{
     listaResistencia=[];
     const borrarHistorial =document.getElementById("parrafohistorial");
     borrarHistorial.innerHTML = "";
+    selectorPrimerColorUno.value="";
+    selectorSegundoColorUno.value="";
+    selectorTercerColorUno.value="";
+    selectorCuartoColorUno.value="";
+    mostrarValor.value="";
 });
 
 let btnHistorialCinco=document.getElementById("btnHistorialCinco");
@@ -324,6 +329,12 @@ clearHistoriaCinco.addEventListener("click", (e)=>{
     listaResistencia=[];
     const borrarHistorial =document.getElementById("parrafohistorial");
     borrarHistorial.innerHTML = "";
+    selectorPrimerColorDos.value="";
+    selectorSegundoColorDos.value="";
+    selectorTercerColorDos.value="";
+    selectorCuartoColorDos.value="";
+    selectorQuintoColorUno.value="";
+    mostrarValor.value="";
 });
 
 let btnHistorialSeis=document.getElementById("btnHistorialSeis");
@@ -353,6 +364,14 @@ clearHistoriaSeis.addEventListener("click", (e)=>{
     listaResistencia=[];
     const borrarHistorial =document.getElementById("parrafohistorial");
     borrarHistorial.innerHTML = "";
+    selectorPrimerColorTres.value="";
+    selectorSegundoColorTres.value="";
+    selectorTercerColorTres.value="";
+    selectorCuartoColorTres.value="";
+    selectorQuintoColorDos.value="";
+    selectorSestoColor.value="";
+    mostrarValor.value="";
+
 });
 
 
