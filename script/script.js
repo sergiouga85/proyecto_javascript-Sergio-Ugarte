@@ -239,6 +239,10 @@ btnCalcularCuatroBandas.addEventListener("click", (e)=>{
     mostrarValor.value= ('Resistencia de '+nuevaResistencia.calcularCuatroBandas() +" con "+ nuevaResistencia.ToleranciaCuatroBandas()+" de Tolerancia");
     listaResistenciaJSON= JSON.stringify(listaResistencia);
     localStorage.setItem("listaResistencia",listaResistenciaJSON);
+    selectorPrimerColorUno.value="";
+    selectorSegundoColorUno.value="";
+    selectorTercerColorUno.value="";
+    selectorCuartoColorUno.value="";
 }); 
 
 let btnCalcularCincoBandas= document.getElementById("btnCalcularCincoBandas");
@@ -252,6 +256,11 @@ btnCalcularCincoBandas.addEventListener("click", (e)=>{
     mostrarValor.value= ('Resistencia de '+nuevaResistencia.calcularCincoBandas() +" con "+ nuevaResistencia.ToleranciaCincoBandas()+" de Tolerancia");
     listaResistenciaJSON= JSON.stringify(listaResistencia);
     localStorage.setItem("listaResistencia",listaResistenciaJSON);
+    selectorPrimerColorDos.value="";
+    selectorSegundoColorDos.value="";
+    selectorTercerColorDos.value="";
+    selectorCuartoColorDos.value="";
+    selectorQuintoColorUno.value="";
 }); 
 
 let btnCalcularSeisBandas= document.getElementById("btnCalcularSeisBandas");
@@ -264,7 +273,12 @@ btnCalcularSeisBandas.addEventListener("click", (e)=>{
     mostrarValor.value= ('Resistencia de '+nuevaResistencia.calcularSeisBandas() +" con "+ nuevaResistencia.ToleranciaSeisBandas()+" de Tolerancia con un coeficiente de temperatura de " + nuevaResistencia.coeficienteDeTemperatura());
     listaResistenciaJSON= JSON.stringify(listaResistencia);
     localStorage.setItem("listaResistencia",listaResistenciaJSON);
-
+    selectorPrimerColorTres.value="";
+    selectorSegundoColorTres.value="";
+    selectorTercerColorTres.value="";
+    selectorCuartoColorTres.value="";
+    selectorQuintoColorDos.value="";
+    selectorSestoColor.value="";
 });
 
 let btnHistorialCuatro=document.getElementById("btnHistorialCuatro");
@@ -295,10 +309,6 @@ clearHistorialCuatro.addEventListener("click", (e)=>{
     listaResistencia=[];
     const borrarHistorial =document.getElementById("parrafohistorial");
     borrarHistorial.innerHTML = "";
-    selectorPrimerColorUno.value="";
-    selectorSegundoColorUno.value="";
-    selectorTercerColorUno.value="";
-    selectorCuartoColorUno.value="";
     mostrarValor.value="";
 });
 
@@ -329,11 +339,6 @@ clearHistoriaCinco.addEventListener("click", (e)=>{
     listaResistencia=[];
     const borrarHistorial =document.getElementById("parrafohistorial");
     borrarHistorial.innerHTML = "";
-    selectorPrimerColorDos.value="";
-    selectorSegundoColorDos.value="";
-    selectorTercerColorDos.value="";
-    selectorCuartoColorDos.value="";
-    selectorQuintoColorUno.value="";
     mostrarValor.value="";
 });
 
@@ -364,12 +369,6 @@ clearHistoriaSeis.addEventListener("click", (e)=>{
     listaResistencia=[];
     const borrarHistorial =document.getElementById("parrafohistorial");
     borrarHistorial.innerHTML = "";
-    selectorPrimerColorTres.value="";
-    selectorSegundoColorTres.value="";
-    selectorTercerColorTres.value="";
-    selectorCuartoColorTres.value="";
-    selectorQuintoColorDos.value="";
-    selectorSestoColor.value="";
     mostrarValor.value="";
 
 });
