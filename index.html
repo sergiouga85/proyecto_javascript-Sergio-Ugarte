@@ -21,13 +21,13 @@
        <div class="navegacion">
             <ul class="nav">
                 <li class="nav-item" role="presentation">
-                    <button  id = "btnCuatroBandas" class="nav-link active" id="cuatro-bandas-tab" data-bs-toggle="tab" data-bs-target="#cuatro-bandas-tab-pane" type="button" role="tab" aria-controls="cuatro-bandas-tab-pane" aria-selected="true">CUATRO BANDAS</button>
+                    <button id="btnCuatroBandas" class="nav-link active"  type="button"  aria-selected="true">CUATRO BANDAS</button>
                 </li>
                 <li class="nav-item" role="presentation">
-                    <button  id = "btnCincoBandas" class="nav-link" id="cinco-bandas-tab" data-bs-toggle="tab" data-bs-target="#cinco-bandas-tab-pane" type="button" role="tab" aria-controls="cinco-bandas-tab-pane" aria-selected="false">CINCO BANDAS</button>
+                    <button id="btnCincoBandas" class="nav-link" aria-selected="false">CINCO BANDAS</button>
                 </li>
                 <li class="nav-item" role="presentation">
-                    <button  id = "btnSeisBandas" class="nav-link" id="sies-bandas-tab" data-bs-toggle="tab" data-bs-target="#seis-bandas-tab-pane" type="button" role="tab" aria-controls="seis-bandas-tab-pane" aria-selected="false">SEIS BANDAS</button>
+                    <button id="btnSeisBandas" class="nav-link" aria-selected="false">SEIS BANDAS</button>
                 </li>
             </ul>
         </div>
@@ -50,328 +50,142 @@
                 </div>
                 <div class="container-formulario">
                     <form class="formulario" action="" method="get">
-                        <div class="campo"> 
+                        <div class="campo" id="primeraBandaRes"> 
                             <label for="opciones">1.ª banda de color</label>
-                            <select  id="primeraBandaUno" class="form-select" aria-label="Default select example">
+                            <select  id="primeraBanda" class="form-select" aria-label="Default select example">
                                 <option value="">-- Selecciona una opción --</option>
-                                <option value="NEGRO">Negro</option>
-                                <option value="MARRON">Marron</option>
-                                <option value="ROJO">Rojo</option>
-                                <option value="NARANJA">Naranja</option>
-                                <option value="AMARILLO">Amarillo</option>
-                                <option value="VERDE">Verde</option>
-                                <option value="AZUL">Azul</option>
-                                <option value="VIOLETA">Violeta</option>
-                                <option value="GRIS">Gris</option>
-                                <option value="BLANCO">Blanco</option>
+                                <option value= 'black' >Negro</option>
+                                <option value= 'brown' >Marron</option>
+                                <option value= 'red' >Rojo</option>
+                                <option value= 'orange' >Naranja</option>
+                                <option value= 'yellow' >Amarillo</option>
+                                <option value= 'green' >Verde</option>
+                                <option value= 'blue'>Azul</option>
+                                <option value= 'blueviolet'>Violeta</option>
+                                <option value= 'gray' >Gris</option>
+                                <option value= 'white' >Blanco</option>
                             </select>
                         </div>
             
-                        <div class="campo"> 
+                        <div class="campo" id="segundaBandaRes"> 
                             <label for="opciones">2.ª banda de color</label>
-                            <select id="segundaBandaUno" class="form-select" aria-label="Default select example">
+                            <select id="segundaBanda" class="form-select" aria-label="Default select example">
                                 <option value="">-- Selecciona una opción --</option>
-                                <option value="NEGRO">Negro</option>
-                                <option value="MARRON">Marron</option>
-                                <option value="ROJO">Rojo</option>
-                                <option value="NARANJA">Naranja</option>
-                                <option value="AMARILLO">Amarillo</option>
-                                <option value="VERDE">Verde</option>
-                                <option value="AZUL">Azul</option>
-                                <option value="VIOLETA">Violeta</option>
-                                <option value="GRIS">Gris</option>
-                                <option value="BLANCO">Blanco</option>
+                                <option value= 'black' >Negro</option>
+                                <option value= 'brown' >Marron</option>
+                                <option value= 'red' >Rojo</option>
+                                <option value= 'orange' >Naranja</option>
+                                <option value= 'yellow' >Amarillo</option>
+                                <option value= 'green' >Verde</option>
+                                <option value= 'blue'>Azul</option>
+                                <option value= 'blueviolet'>Violeta</option>
+                                <option value= 'gray' >Gris</option>
+                                <option value= 'white' >Blanco</option>
                             </select>
                         </div>
             
 
-                        <div class="campo"> 
+                        <div class="campo" id="terceraBandaRes"> 
                             <label for="opciones">3.ª banda de color (Multiplicador)</label>
-                            <select id="terceraBandaUno" class="form-select" aria-label="Default select example">
+                            <select id="terceraBanda" class="form-select" aria-label="Default select example">
                                 <option value="">-- Selecciona una opción --</option>
-                                <option value="NEGRO">Negro</option>
-                                <option value="MARRON">Marron</option>
-                                <option value="ROJO">Rojo</option>
-                                <option value="NARANJA">Naranja</option>
-                                <option value="AMARILLO">Amarillo</option>
-                                <option value="VERDE">Verde</option>
-                                <option value="AZUL">Azul</option>
-                                <option value="VIOLETA">Violeta</option>
-                                <option value="GRIS">Gris</option>
-                                <option value="BLANCO">Blanco</option>
+                                <option value= 'black' >Negro</option>
+                                <option value= 'brown' >Marron</option>
+                                <option value= 'red' >Rojo</option>
+                                <option value= 'orange' >Naranja</option>
+                                <option value= 'yellow' >Amarillo</option>
+                                <option value= 'green' >Verde</option>
+                                <option value= 'blue'>Azul</option>
+                                <option value= 'blueviolet'>Violeta</option>
+                                <option value= 'gray' >Gris</option>
+                                <option value= 'white' >Blanco</option>
                             </select>
                         </div>
 
-                        <div class="campo"> 
+                        <div class="campo" id="cuartaBandaRes"> 
                             <label for="opciones">4.ª banda de color (Tolerancia)</label>
-                                <select id="cuartaBandaUno" class="form-select" aria-label="Default select example">
+                            <select id="cuartaBanda" class="form-select" aria-label="Default select example">
                                 <option value="">-- Selecciona una opción --</option>
-                                <option value="MARRON">Marron</option>
-                                <option value="ROJO">Rojo</option>
-                                <option value="VERDE">Verde</option>
-                                <option value="AZUL">Azul</option>
-                                <option value="VIOLETA">Violeta</option>
-                                <option value="GRIS">Gris</option>
-                                <option value="BLANCO">Blanco</option>
-                                <option value="ORO">Oro</option>
-                                <option value="PLATA">Plata</option>
-                            </select>
-                        </div>    
-                        <div class="campo">
-                            <label for="opciones">Valor de Resistencia en Ohms [Ω]</label>
-                        </div>
-                        <div  class="input-group mb-3">
-                            <input  id="valorResistivoCuatro" type="text" class="form-control" value= " " aria-label="Text input with segmented dropdown button">
-                        </div> 
-                        <div>
-                            <button id="btnCalcularCuatroBandas" type="button" class="btn btn-primary">Calcular</button>
-                        </div>
-                        <div>
-                            <button id="btnHistorialCuatro" type="button" class="btn btn-success">Historial de busqueda</button>
-                        </div>
-                        <div>
-                            <button id="clearHistorialCuatro" type="button" class="btn btn-danger">Borrar Historial</button>
-                        </div>
-                        <div>
-                            <img src="./img/resistencia_cuatro_bandas.png" class="d-block w-100" alt="img-resistencia">
-                        </div>
-                    </form>
-                    
-                </div>
-            </div>
-            <div class="tab-pane fade" id="cinco-bandas-tab-pane" role="tabpanel" aria-labelledby="cinco-bandas-tab" tabindex="0">
-                <div class="titulo-h4">
-                    <h4>RESISTENCIAS DE CINCO BANDAS DE COLORES</h4>
-                </div>
-                <div class="container-formulario">
-                    <form class="formulario" action="" method="get">
-                        <div class="campo"> 
-                            <label for="opciones">1.ª banda de color</label>
-                            <select id="primeraBandaDos" class="form-select" aria-label="Default select example">
-                                <option value="">-- Selecciona una opción --</option>
-                                <option value="NEGRO">Negro</option>
-                                <option value="MARRON">Marron</option>
-                                <option value="ROJO">Rojo</option>
-                                <option value="NARANJA">Naranja</option>
-                                <option value="AMARILLO">Amarillo</option>
-                                <option value="VERDE">Verde</option>
-                                <option value="AZUL">Azul</option>
-                                <option value="VIOLETA">Violeta</option>
-                                <option value="GRIS">Gris</option>
-                                <option value="BLANCO">Blanco</option>
+                                <option value= 'brown' >Marron</option>
+                                <option value= 'red'>Rojo</option>
+                                <option value= 'green' >Verde</option>
+                                <option value= 'blue'>Azul</option>
+                                <option value= 'blueviolet'>Violeta</option>
+                                <option value= 'gray'>Gris</option>
+                                <option value= 'gold' >Oro</option>
+                                <option value= 'silver'>Plata</option>
                             </select>
                         </div>
-            
-                        <div class="campo"> 
-                            <label for="opciones">2.ª banda de color</label>
-                            <select id="segundaBandaDos" class="form-select" aria-label="Default select example">
-                                <option value="">-- Selecciona una opción --</option>
-                                <option value="NEGRO">Negro</option>
-                                <option value="MARRON">Marron</option>
-                                <option value="ROJO">Rojo</option>
-                                <option value="NARANJA">Naranja</option>
-                                <option value="AMARILLO">Amarillo</option>
-                                <option value="VERDE">Verde</option>
-                                <option value="AZUL">Azul</option>
-                                <option value="VIOLETA">Violeta</option>
-                                <option value="GRIS">Gris</option>
-                                <option value="BLANCO">Blanco</option>
-                            </select>
-                        </div>
-                        <div class="campo"> 
-                            <label for="opciones">3.ª banda de color</label>
-                            <select id="terceraBandaDos"class="form-select" aria-label="Default select example">
-                                <option value="">-- Selecciona una opción --</option>
-                                <option value="NEGRO">Negro</option>
-                                <option value="MARRON">Marron</option>
-                                <option value="ROJO">Rojo</option>
-                                <option value="NARANJA">Naranja</option>
-                                <option value="AMARILLO">Amarillo</option>
-                                <option value="VERDE">Verde</option>
-                                <option value="AZUL">Azul</option>
-                                <option value="VIOLETA">Violeta</option>
-                                <option value="GRIS">Gris</option>
-                                <option value="BLANCO">Blanco</option>
-                            </select>
-                        </div>
-    
-                        <div class="campo"> 
-                            <label for="opciones">4.ª banda de color (multiplicador)</label>
-                            <select id="cuartaBandaDos"class="form-select" aria-label="Default select example">
-                                <option value="">-- Selecciona una opción --</option>
-                                <option value="NEGRO">Negro</option>
-                                <option value="MARRON">Marron</option>
-                                <option value="ROJO">Rojo</option>
-                                <option value="NARANJA">Naranja</option>
-                                <option value="AMARILLO">Amarillo</option>
-                                <option value="VERDE">Verde</option>
-                                <option value="AZUL">Azul</option>
-                                <option value="VIOLETA">Violeta</option>
-                                <option value="GRIS">Gris</option>
-                                <option value="BLANCO">Blanco</option>
-                                </select>
-                        </div>
-                        
-                        <div class="campo"> 
+                        <div class="campo" id="quintaBandaRes" style="display:none"> 
                             <label for="opciones">5.ª banda de color (Tolerancia)</label>
-                            <select id="quintaBandaUno"class="form-select" aria-label="Default select example">
+                            <select id="quintaBanda" class="form-select" aria-label="Default select example">
                                 <option value="">-- Selecciona una opción --</option>
-                                <option value="MARRON">Marron</option>
-                                <option value="ROJO">Rojo</option>
-                                <option value="VERDE">Verde</option>
-                                <option value="AZUL">Azul</option>
-                                <option value="VIOLETA">Violeta</option>
-                                <option value="GRIS">Gris</option>
-                                <option value="BLANCO">Blanco</option>
-                                <option value="ORO">Oro</option>
-                                <option value="PLATA">Plata</option>
+                                <option value= 'brown' >Marron</option>
+                                <option value= 'red'>Rojo</option>
+                                <option value= 'green' >Verde</option>
+                                <option value= 'blue'>Azul</option>
+                                <option value= 'blueviolet'>Violeta</option>
+                                <option value= 'gray'>Gris</option>
+                                <option value= 'gold' >Oro</option>
+                                <option value= 'silver'>Plata</option>
                             </select>
-                        </div> 
+                        </div>
+                        <div class="campo" id="sestaBandaRes" style="display:none"> 
+                            <label for="opciones">6.ª banda de color (Coef.Temperatura)</label>
+                                <select id="sestaBanda" class="form-select" aria-label="Default select example">
+                                <option value="">-- Selecciona una opción --</option>
+                                <option value= 'brown' >Marron</option>
+                                <option value= 'red'>Rojo</option>
+                                <option value= 'green' >Verde</option>
+                                <option value= 'blue'>Azul</option>
+                                <option value= 'blueviolet'>Violeta</option>
+                                <option value= 'gray'>Gris</option>
+                                <option value= 'gold' >Oro</option>
+                                <option value= 'silver'>Plata</option>
+                            </select>
+                        </div>      
                         <div class="campo">
                             <label for="opciones">Valor de Resistencia en Ohms [Ω]</label>
                         </div>
                         <div  class="input-group mb-3">
-                            <input  id="valorResistivoCinco" type="text" class="form-control" value= " " aria-label="Text input with segmented dropdown button">
+                            <input  id="valorResistivo" type="text" class="form-control" value= " " aria-label="Text input with segmented dropdown button">
                         </div> 
                         <div>
-                            <button id="btnCalcularCincoBandas" type="button" class="btn btn-primary">Calcular</button>
+                            <button id="btnCalcularCuatroBandas"  type="button" class="btn btn-primary">Calcular</button>
                         </div>
                         <div>
-                            <button id="btnHistorialCinco" type="button" class="btn btn-success">Historial de busqueda</button>
+                            <button id="btnCalcularCincoBandas" style="display:none" type="button" class="btn btn-primary">Calcular</button>
                         </div>
                         <div>
-                            <button id="clearHistorialCinco" type="button" class="btn btn-danger">Borrar Historial</button>
+                            <button id="btnCalcularSeisBandas" style="display:none" type="button" class="btn btn-primary">Calcular</button>
                         </div>
                         <div>
-                            <img src="./img/resistencia_cinco_bandas.png" class="d-block w-100" alt="img-resistencia">
-                        </div> 
-                    </form>
+                            <button id="btnHistorial"  type="button" class="btn btn-success">Historial de busqueda</button>
+                        </div>
+                        <div>
+                            <button id="clearHistorial"  type="button" class="btn btn-danger">Borrar Historial</button>
+                        </div>
+   
+                        <div class="div-bandas-uno div-resistencia-uno" id="resistenciaUno" >
+                            <img src="img/bg-Resistencia1.png" class="resistencia">
+                        </div>
+                        <div class="div-bandas-uno div-resistencia" id="resistenciaDos" style="display: none;" >
+                            <img src="img/bg-Resistencia2.png" class="resistencia">
+                        </div>
+                        <div class="div-bandas-uno div-resistencia" id="resistenciaTres" style="display: none;" >
+                            <img src="img/bg-Resistencia3.png" class="resistencia">
+                        </div>
+                        <div id="diagrama-Resistencia">
+                                <div class="div-bandas-uno" id="firstBand"></div>
+                                <div class="div-bandas-uno" id="secondBand"></div>
+                                <div class="div-bandas-uno" id="thirdBand"></div>
+                                <div class="div-bandas-uno" id="fourthBand"></div>
+                                <div class="div-bandas-uno" id="fifthBand"></div>  
+                                <div class="div-bandas-uno" id="sixthBand"></div>     
+                        </div>   
+                    </form>   
                 </div>
-            </div>
-            <div class="tab-pane fade" id="seis-bandas-tab-pane" role="tabpanel" aria-labelledby="seis-bandas-tab" tabindex="0">
-                <div class="titulo-h4">
-                    <h4>RESISTENCIAS DE CINCO BANDAS DE COLORES</h4>
-                </div>
-                <div class="container-formulario">
-                    <form class="formulario" action="" method="get">
-                        <div class="campo"> 
-                            <label for="opciones">1.ª banda de color</label>
-                            <select id="primeraBandaTres"class="form-select" aria-label="Default select example">
-                                <option value="">-- Selecciona una opción --</option>
-                                <option value="NEGRO">Negro</option>
-                                <option value="MARRON">Marron</option>
-                                <option value="ROJO">Rojo</option>
-                                <option value="NARANJA">Naranja</option>
-                                <option value="AMARILLO">Amarillo</option>
-                                <option value="VERDE">Verde</option>
-                                <option value="AZUL">Azul</option>
-                                <option value="VIOLETA">Violeta</option>
-                                <option value="GRIS">Gris</option>
-                                <option value="BLANCO">Blanco</option>
-                            </select>
-                        </div>
-            
-                        <div class="campo"> 
-                            <label for="opciones">2.ª banda de color</label>
-                            <select id="segundaBandaTres"class="form-select" aria-label="Default select example">
-                                <option value="">-- Selecciona una opción --</option>
-                                <option value="NEGRO">Negro</option>
-                                <option value="MARRON">Marron</option>
-                                <option value="ROJO">Rojo</option>
-                                <option value="NARANJA">Naranja</option>
-                                <option value="AMARILLO">Amarillo</option>
-                                <option value="VERDE">Verde</option>
-                                <option value="AZUL">Azul</option>
-                                <option value="VIOLETA">Violeta</option>
-                                <option value="GRIS">Gris</option>
-                                <option value="BLANCO">Blanco</option>
-                            </select>
-                        </div>
-                        <div class="campo"> 
-                            <label for="opciones">3.ª banda de color</label>
-                            <select id="terceraBandaTres"class="form-select" aria-label="Default select example">
-                                <option value="">-- Selecciona una opción --</option>
-                                <option value="NEGRO">Negro</option>
-                                <option value="MARRON">Marron</option>
-                                <option value="ROJO">Rojo</option>
-                                <option value="NARANJA">Naranja</option>
-                                <option value="AMARILLO">Amarillo</option>
-                                <option value="VERDE">Verde</option>
-                                <option value="AZUL">Azul</option>
-                                <option value="VIOLETA">Violeta</option>
-                                <option value="GRIS">Gris</option>
-                                <option value="BLANCO">Blanco</option>
-                            </select>
-                        </div>
-    
-                        <div class="campo"> 
-                            <label for="opciones">4.ª banda de color (Multiplicador)</label>
-                            <select id="cuartaBandaTres"class="form-select" aria-label="Default select example">
-                                <option value="">-- Selecciona una opción --</option>
-                                <option value="NEGRO">Negro</option>
-                                <option value="MARRON">Marron</option>
-                                <option value="ROJO">Rojo</option>
-                                <option value="NARANJA">Naranja</option>
-                                <option value="AMARILLO">Amarillo</option>
-                                <option value="VERDE">Verde</option>
-                                <option value="AZUL">Azul</option>
-                                <option value="VIOLETA">Violeta</option>
-                                <option value="GRIS">Gris</option>
-                                <option value="BLANCO">Blanco</option>
-                            </select>
-                        </div>
-                        
-                        <div class="campo"> 
-                            <label for="opciones">5.ª banda de color (Tolerancia)</label>
-                            <select id="quintaBandaDos"class="form-select" aria-label="Default select example">
-                                <option value="">-- Selecciona una opción --</option>
-                                <option value="MARRON">Marron</option>
-                                <option value="ROJO">Rojo</option>
-                                <option value="VERDE">Verde</option>
-                                <option value="AZUL">Azul</option>
-                                <option value="VIOLETA">Violeta</option>
-                                <option value="GRIS">Gris</option>
-                                <option value="BLANCO">Blanco</option>
-                                <option value="ORO">Oro</option>
-                                <option value="PLATA">Plata</option>
-                            </select>
-                        </div> 
-
-                        <div class="campo"> 
-                            <label for="opciones">6.ª banda de color (coefic. de Temperatura)</label>
-                            <select id="sestaBanda"class="form-select" aria-label="Default select example">
-                                <option value="">-- Selecciona una opción --</option>
-                                <option value="MARRON">Marron</option>
-                                <option value="ROJO">Rojo</option>
-                                <option value="NARANJA">Naranja</option>
-                                <option value="AMARILLO">Amarillo</option>
-                                <option value="AZUL">Azul</option>
-                                <option alue="VIOLETA">Violeta</option>
-                            </select>
-                        </div>
-            
-                        <div class="campo">
-                            <label for="opciones">Valor de Resistencia en Ohms [Ω]</label>
-                        </div>
-                        <div  class="input-group mb-3">
-                            <input  id="valorResistivoSeis" type="text" class="form-control" value= " " aria-label="Text input with segmented dropdown button">
-                        </div> 
-                        <div>
-                            <button id="btnCalcularSeisBandas" type="button" class="btn btn-primary">Calcular</button>
-                        </div>
-                        <div>
-                            <button id="btnHistorialSeis" type="button" class="btn btn-success">Historial de busqueda</button>
-                        </div>
-                        <div>
-                            <button id="clearHistorialSeis" type="button" class="btn btn-danger">Borrar Historial</button>
-                        </div>
-                        <div>
-                            <img src="./img/resistencia_seis_bandas.png" class="d-block w-100" alt="img-resistencia">
-                        </div>
-                    </form>  
-                </div>
-            </div>
-            
+            </div>    
         </div>
         <div id="historial">
             <h4 class="tituloHistorial">HISTORIAL DE BUSQUEDA</h4>  
