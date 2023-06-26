@@ -11,8 +11,7 @@ header{
 }
 
 header .nav-link {
-    color: white;
-    
+    color: white;  
 }
 
 header .nav-link:hover {
@@ -25,9 +24,7 @@ header .nav-link:hover {
     padding-right: 20px;
 }
 
-
 section{
-   
     padding-bottom: 60px;
     background-color:rgb(151, 139, 91);
 }
@@ -35,7 +32,7 @@ section{
 .parrafo{
     display:grid;
     margin: 20px auto;
-    max-width: 85%;
+    width: 450px;
     padding: 20px;
     gap:25px;
 }
@@ -99,7 +96,7 @@ section{
 .formulario, .parrafo , #historial{
     background-color:rgb(64, 64, 55);
     opacity: .7;
-    width:500px;
+    width:450px;
     margin: 10px auto;
     padding: 20px;
     border-radius: 10px;  
@@ -137,10 +134,9 @@ section{
 
 .titulo-h4{
     background-color:rgb(58, 55, 47);
-    margin: 0 auto;
-    width: 500px;
+    margin: 10px auto;
+    width: 450px;
     border-radius: 10px;  
-    
 }
 
 .titulo-h4 h4{
@@ -152,7 +148,7 @@ section{
     text-align: center;
 }
 
-#valorResistivoSeis{
+#valorResistivo{
     height: 70px;
 }
 
@@ -165,7 +161,7 @@ section{
     height: 80px; 
 }
 
-.div-bandas-uno{
+.div-bandas{
     position: relative;
 }
 
@@ -173,14 +169,9 @@ section{
     display: flex;
     justify-content: center;
     padding-top: 40px;
-    padding-left: 35px;
+    padding-left: 10px;
 }
 
-.div-resistencia-uno{
-    display: flex;
-    justify-content: center;
-    padding-top: 40px;
-}
 
 #firstBand{ 
     width: 16px;
@@ -244,8 +235,7 @@ footer .parrafo-pie{
     padding: 0px 20px;
 }
 
-
-@media screen and (max-width:576px) {
+@media screen and (max-width:500px) {
     
     header{
         height:270px;
@@ -257,18 +247,14 @@ footer .parrafo-pie{
         align-items: center;
         padding: 15px;
     }
-    .formulario, #historial,.titulo-h4, .parrafo{ 
-        width:85%;
-    } 
+    .formulario, .parrafo , #historial, .titulo-h4{    
+        width:350px;          
+    }
     .titulo-h1 {
         width: 100%;
     }
     .titulo-h1 h1 {
         font-size: 13px;
-    }
-    .titulo-h4 {
-        width: 85%;
-        
     }
     .titulo-h4 h4{
         font-size: 13px;
@@ -278,166 +264,16 @@ footer .parrafo-pie{
         width: 100%;
     }
 
-    .resistencia{
-        width: 315px; 
+    .div-resistencia{
+        padding-left: 3%;
     }
-
-    #firstBandOne,#firstBandTwo, #firstBandThree{
-        width: 11px;
-        left:25%;
-    }
-
-    #secondBandOne, #secondBandTwo,#secondBandThree{
-        width: 11px; 
-        left: 42%;
-    }
-
-    #thirdBandOne, #thirdBandTwo,#thirdBandThree{
-        width: 11px;
-        left: 50%;
-    }
-
-    #fourthBandOne{
-        width: 11px;  
-        left: 80%; 
-    }
-
-    #fourthBandTwo,#fourthBandThree{
-        width: 11px;   
-        left: 58%;
-    }
-    
-    #fifthBandTwo{
-        width: 11px;
-        left: 80%;
-    }
-
-    #sixthBandOne{
-        width: 11px;
-        left: 74%;
-    }
-  
-}
-
-@media screen and (max-width:650px) {
-
-    header{
-        height:270px;
-    }
-
-    .container, .nav{
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding: 15px;
-    }
-
-    #firstBandOne,#firstBandTwo{
-        
-        left:25%;
-    }
-    #secondBandOne,#secondBandTwo{
-        
-        left: 42%;
-    }
-    #thirdBandOne, #thirdBandTwo{
-
-        left: 50%;
-    }
-    #fourthBandOne{  
-        left: 72%; 
-    }
-    #fourthBandTwo{   
-        left: 58%;
-    }
-    #fifthBandTwo{
-
-        left: 68%;
-    }
-}
-
-@media screen and (max-width:520px) {
-
-    #firstBandOne, #firstBandTwo,#firstBandThree{
-        width: 11px;
-        left:25%;
-    }
-
-    #secondBandOne, #secondBandTwo, #secondBandThree{
-        width: 11px;
-        left: 40%;
-    }
-
-    #thirdBandOne, #thirdBandTwo, #thirdBandThree {
-        width: 11px;
-        left: 48%;
-    }
-
-    #fourthBandOne{  
-        width: 11px;
-        left: 80%; 
-    }
-    
-    #fourthBandTwo, #fourthBandThree{   
-        width: 11px;
-        left: 58%;
-    }
-    
-    #fifthBandTwo{
-        width: 11px;
-        left: 70%;
-    }
-
-    #sixthBandTwo{
-        width: 11px;
-        left: 70%;
-    }
-
-}
-
-
-@media screen and (max-width:400px) {
 
     .resistencia{
-        width: 280px; 
-        height: 80px;
+        width: 290px;
     }
 
-    #firstBandOne, #firstBandTwo,#firstBandThree{
+    #firstBand, #secondBand, #thirdBand,#fourthBand ,#fifthBand,#sixthBand{ 
         width: 11px;
-        left:20%;
     }
 
-    #secondBandOne, #secondBandTwo, #secondBandThree{
-        width: 11px;
-        top:-151px;
-        left: 35%;
-    }
-
-    #thirdBandOne, #thirdBandTwo,#thirdBandThree{
-        width: 12px;
-        top:-213px;
-        left: 48%;
-    }
-
-    #fourthBandOne{ 
-        width: 11px; 
-        left: 80%; 
-    }
-
-    #fourthBandTwo,#fourthBandThree{ 
-        width: 11px;  
-        left: 62%;
-    }
-
-    #fifthBandOne, #fifthBandTwo{
-        width: 11px;
-        left: 75%;
-    }
-
-    #sixthBandOne{
-        width: 11px;
-        left: 84%;
-    
-    }
 }

@@ -65,8 +65,7 @@
                                 <option value= 'gray' >Gris</option>
                                 <option value= 'white' >Blanco</option>
                             </select>
-                        </div>
-            
+                        </div>   
                         <div class="campo" id="segundaBandaRes"> 
                             <label for="opciones">2.ª banda de color</label>
                             <select id="segundaBanda" class="form-select" aria-label="Default select example">
@@ -83,10 +82,8 @@
                                 <option value= 'white' >Blanco</option>
                             </select>
                         </div>
-            
-
                         <div class="campo" id="terceraBandaRes"> 
-                            <label for="opciones">3.ª banda de color (Multiplicador)</label>
+                            <label for="opciones">3.ª banda de color</label>
                             <select id="terceraBanda" class="form-select" aria-label="Default select example">
                                 <option value="">-- Selecciona una opción --</option>
                                 <option value= 'black' >Negro</option>
@@ -114,6 +111,22 @@
                                 <option value= 'gray'>Gris</option>
                                 <option value= 'gold' >Oro</option>
                                 <option value= 'silver'>Plata</option>
+                            </select>
+                        </div>
+                        <div class="campo" id="cuartaBandaResDos" style="display:none"> 
+                            <label for="opciones">4.ª banda de color</label>
+                            <select id="cuartaBandaDos" class="form-select" aria-label="Default select example">
+                                <option value="">-- Selecciona una opción --</option>
+                                <option value= 'black' >Negro</option>
+                                <option value= 'brown' >Marron</option>
+                                <option value= 'red' >Rojo</option>
+                                <option value= 'orange' >Naranja</option>
+                                <option value= 'yellow' >Amarillo</option>
+                                <option value= 'green' >Verde</option>
+                                <option value= 'blue'>Azul</option>
+                                <option value= 'blueviolet'>Violeta</option>
+                                <option value= 'gray' >Gris</option>
+                                <option value= 'white' >Blanco</option>
                             </select>
                         </div>
                         <div class="campo" id="quintaBandaRes" style="display:none"> 
@@ -166,22 +179,22 @@
                             <button id="clearHistorial"  type="button" class="btn btn-danger">Borrar Historial</button>
                         </div>
    
-                        <div class="div-bandas-uno div-resistencia-uno" id="resistenciaUno" >
+                        <div class="div-bandas div-resistencia" id="resistenciaUno">
                             <img src="img/bg-Resistencia1.png" class="resistencia">
                         </div>
-                        <div class="div-bandas-uno div-resistencia" id="resistenciaDos" style="display: none;" >
+                        <div class="div-bandas div-resistencia" id="resistenciaDos" style="display: none;" >
                             <img src="img/bg-Resistencia2.png" class="resistencia">
                         </div>
-                        <div class="div-bandas-uno div-resistencia" id="resistenciaTres" style="display: none;" >
+                        <div class="div-bandas div-resistencia" id="resistenciaTres" style="display: none;" >
                             <img src="img/bg-Resistencia3.png" class="resistencia">
                         </div>
                         <div id="diagrama-Resistencia">
-                                <div class="div-bandas-uno" id="firstBand"></div>
-                                <div class="div-bandas-uno" id="secondBand"></div>
-                                <div class="div-bandas-uno" id="thirdBand"></div>
-                                <div class="div-bandas-uno" id="fourthBand"></div>
-                                <div class="div-bandas-uno" id="fifthBand"></div>  
-                                <div class="div-bandas-uno" id="sixthBand"></div>     
+                                <div class="div-bandas" id="firstBand"></div>
+                                <div class="div-bandas" id="secondBand"></div>
+                                <div class="div-bandas" id="thirdBand"></div>
+                                <div class="div-bandas" id="fourthBand"></div>
+                                <div class="div-bandas" id="fifthBand"></div>  
+                                <div class="div-bandas" id="sixthBand"></div>     
                         </div>   
                     </form>   
                 </div>
@@ -189,18 +202,14 @@
         </div>
         <div id="historial">
             <h4 class="tituloHistorial">HISTORIAL DE BUSQUEDA</h4>  
-            <div id="parrafohistorial">
-                                    
-            </div>
-       </div> 
-                  
+            <div id="parrafohistorial"></div>
+       </div>              
 </section>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
-    <script src="script/script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+<script src="script/script.js"></script>
 <footer>
     <div class="parrafo-footer">
-        <p class="parrafo-pie">© Calculadora de resistencias, todos los derechos reservados. Sergio Ugarte Front end Developer</p>
+        <p class="parrafo-pie">© Calculadora de resistencias, todos los derechos reservados. Sergio Ugarte Frontend Developer</p>
       </div>
 </footer>
     
