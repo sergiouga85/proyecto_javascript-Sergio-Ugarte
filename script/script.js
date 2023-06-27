@@ -267,7 +267,7 @@ btnCalcularCincoBandas.addEventListener("click", (e)=>{
     selectorPrimerColor.value="";
     selectorSegundoColor.value="";
     selectorTercerColor.value="";
-    selectorCuartoColor.value="";
+    selectorCuartoColorDos.value="";
     selectorQuintoColor.value="";
 }); 
 
@@ -284,7 +284,7 @@ btnCalcularSeisBandas.addEventListener("click", (e)=>{
     selectorPrimerColor.value="";
     selectorSegundoColor.value="";
     selectorTercerColor.value="";
-    selectorCuartoColor.value="";
+    selectorCuartoColorDos.value="";
     selectorQuintoColor.value="";
     selectorSestoColor.value="";
 });
