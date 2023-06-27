@@ -257,6 +257,10 @@ btnCalcularCuatroBandas.addEventListener("click", (e)=>{
     selectorCuartoColor.value="";
     selectorQuintoColor.value="";
     selectorSestoColor.value="";
+    primerColor="";
+    segundoColor="";
+    tercerColor="";
+    cuartoColor="";
 });
 
 let btnCalcularCincoBandas= document.getElementById("btnCalcularCincoBandas");
@@ -275,6 +279,12 @@ btnCalcularCincoBandas.addEventListener("click", (e)=>{
     selectorTercerColor.value="";
     selectorCuartoColorDos.value="";
     selectorQuintoColor.value="";
+    primerColor="";
+    segundoColor="";
+    tercerColor="";
+    cuartoColorDos="";
+    quintoColor="";
+    sestoColor="";
 }); 
 
 let btnCalcularSeisBandas= document.getElementById("btnCalcularSeisBandas");
