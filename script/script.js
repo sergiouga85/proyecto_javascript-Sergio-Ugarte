@@ -29,6 +29,12 @@ let mostrarCuatroBandas=selectorCuatroBandas.addEventListener("click",(e)=>{
     quintaBandaRes.style.display='none';
     let sestaBandaRes = document.getElementById("sestaBandaRes");
     sestaBandaRes.style.display='none';
+    let mostrarBtnCuatro=document.getElementById("btnCalcularCuatroBandas");
+    mostrarBtnCuatro.style.display='block';
+    let mostrarBtnCinco=document.getElementById("btnCalcularCincoBandas");
+    mostrarBtnCinco.style.display='none';
+    let mostrarBtnSeis=document.getElementById("btnCalcularSeisBandas");
+    mostrarBtnSeis.style.display='none';
     let diagramaResistencia=document.getElementById("resistenciaUno");
     diagramaResistencia.style.display='block';
     let diagramaResistenciaDos=document.getElementById("resistenciaDos");
