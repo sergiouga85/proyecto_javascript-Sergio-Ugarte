@@ -156,11 +156,17 @@
                             </select>
                         </div>      
                         <div class="campo">
-                            <label for="opciones">Valor de Resistencia en Ohms [Ω]</label>
+                            <label for="opciones">Valor de resistencia en ohms[Ω]</label>
                         </div>
                         <div  class="input-group mb-3">
                             <input  id="valorResistivo" type="text" class="form-control" value= " " aria-label="Text input with segmented dropdown button">
                         </div> 
+                        <div class="campo">
+                            <label for="opciones">Valor comercial en ohms[Ω]</label>
+                        </div>
+                        <div  class="input-group mb-3">
+                            <input  id="valorComercial" type="text" class="form-control" value= " " aria-label="Text input with segmented dropdown button">
+                        </div>
                         <div>
                             <button id="btnCalcularCuatroBandas"  type="button" class="btn btn-primary">Calcular</button>
                         </div>
@@ -203,13 +209,14 @@
             <div id="parrafohistorial"></div>
        </div>              
 </section>
+
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
 <script src="script/script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 <footer>
     <div class="parrafo-footer">
         <p class="parrafo-pie">© Calculadora de resistencias, todos los derechos reservados. Sergio Ugarte Frontend Developer</p>
       </div>
-</footer>
-    
+</footer>   
 </body>
 </html>

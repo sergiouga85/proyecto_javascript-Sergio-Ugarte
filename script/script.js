@@ -148,13 +148,13 @@ let sestoColor= selectorSestoColor.addEventListener("change",(e)=>{
 let Resistencia=[
     {color: 'black' , numero:'0', multiplicador:1, unidad:'Ω'},
     {color: 'brown' , numero:'1', multiplicador:10, unidad:'Ω'},
-    {color: 'red' , numero:'2', multiplicador:100, unidad:'Ω'},
+    {color: 'red' , numero:'2', multiplicador:0.1, unidad:'KΩ'},
     {color: 'orange' , numero:'3', multiplicador:1, unidad:'KΩ'},
     {color: 'yellow' , numero:'4', multiplicador:10, unidad:'KΩ'},
-    {color: 'green' , numero:'5', multiplicador:100, unidad:'KΩ'},
+    {color: 'green' , numero:'5', multiplicador:0.1, unidad:'MΩ'},
     {color: 'blue' , numero:'6', multiplicador:1, unidad:'MΩ'},
     {color: 'blueviolet' , numero:'7', multiplicador:10, unidad:'MΩ'},
-    {color: 'gray' , numero:'8', multiplicador:100, unidad:'MΩ'},
+    {color: 'gray' , numero:'8', multiplicador:0.1, unidad:'GΩ'},
     {color: 'white' , numero:'9', multiplicador:1, unidad:'GΩ'}
 ];
 
@@ -192,10 +192,21 @@ class resistenciaCuatro {
         let bandaUno = Resistencia.find((obj_Resistencia)=> obj_Resistencia.color == this.primerColor).numero;
         let bandaDos = Resistencia.find((obj_Resistencia)=> obj_Resistencia.color == this.segundoColor).numero;
         let bandaTres = Resistencia.find((obj_Resistencia)=> obj_Resistencia.color == this.tercerColor).multiplicador;
-        let Unidad= Resistencia.find((obj_Resistencia)=> obj_Resistencia.color == this.tercerColor).unidad;
-        let ValorDeResistenciaCuatro = (bandaUno+bandaDos)* bandaTres + Unidad;
+        let ValorDeResistenciaCuatro = (bandaUno+bandaDos)* bandaTres;
+        if(ValorDeResistenciaCuatro == 3.3000000000000003 || ValorDeResistenciaCuatro ==6.6000000000000005){
+           return (ValorDeResistenciaCuatro).toFixed(1)
+        } else{
         return ValorDeResistenciaCuatro
-    }  
+        }
+        
+    }
+    
+    unidadResCuatro(){
+        let unidad= Resistencia.find((obj_Resistencia)=> obj_Resistencia.color == this.tercerColor).unidad;
+        return unidad
+    }
+    
+
     ToleranciaCuatroBandas(){
         
         let bandaCuatro = Tolerancia.find((obj_Tolerancia)=> obj_Tolerancia.color == this.cuartoColor).porcentaje;
@@ -218,12 +229,21 @@ class resistenciaCinco {
         let bandaUno = Resistencia.find((obj_Resistencia)=> obj_Resistencia.color == this.primerColor).numero;
         let bandaDos = Resistencia.find((obj_Resistencia)=> obj_Resistencia.color == this.segundoColor).numero;
         let bandaTres = Resistencia.find((obj_Resistencia)=> obj_Resistencia.color == this.tercerColor).numero;
-        console.log(this.cuartoColorDos);
         let bandaCuatro = Resistencia.find((obj_Resistencia)=> obj_Resistencia.color == this.cuartoColorDos).multiplicador;
         let Unidad= Resistencia.find((obj_Resistencia)=> obj_Resistencia.color == this.cuartoColorDos).unidad;
-        let ValorDeResistenciaCinco = (bandaUno+bandaDos+bandaTres)* bandaCuatro + Unidad;
-        return ValorDeResistenciaCinco
+        let ValorDeResistenciaCinco = (bandaUno+bandaDos+bandaTres)* bandaCuatro;
+        if(ValorDeResistenciaCinco == 3.3000000000000003 || ValorDeResistenciaCinco ==6.6000000000000005){
+            return (ValorDeResistenciaCinco).toFixed(1)
+         } else{
+         return ValorDeResistenciaCinco
+         }
     }
+
+    unidadResCinco(){
+        let unidad= Resistencia.find((obj_Resistencia)=> obj_Resistencia.color == this.cuartoColorDos).unidad;
+        return unidad
+    }
+
     ToleranciaCincoBandas(){   
         let bandaCinco = Tolerancia.find((obj_Tolerancia)=> obj_Tolerancia.color == this.quintoColor).porcentaje;
         return bandaCinco
@@ -235,6 +255,8 @@ class resistenciaCinco {
     }
 }
 
+
+
 let listaResistencia =[];
 let nuevaResistencia;
 let mostrarValor;
@@ -244,34 +266,71 @@ let btnCalcularCuatroBandas= document.getElementById("btnCalcularCuatroBandas");
 
 btnCalcularCuatroBandas.addEventListener("click", (e)=>{
 
-    nuevaResistencia = new resistenciaCuatro(primerColor,segundoColor,tercerColor,cuartoColor);
-    console.log (nuevaResistencia.calcularCuatroBandas(),nuevaResistencia.ToleranciaCuatroBandas()); 
-    listaResistencia.push(' Resistencia de '+nuevaResistencia.calcularCuatroBandas()+" con "+nuevaResistencia.ToleranciaCuatroBandas()+" de Tolerancia  ");   
-    mostrarValor=document.getElementById("valorResistivo");
-    mostrarValor.value= ('Resistencia de '+nuevaResistencia.calcularCuatroBandas() +" con "+ nuevaResistencia.ToleranciaCuatroBandas()+" de Tolerancia");
-    listaResistenciaJSON= JSON.stringify(listaResistencia);
-    localStorage.setItem("listaResistencia",listaResistenciaJSON);
-    selectorPrimerColor.value="";
-    selectorSegundoColor.value="";
-    selectorTercerColor.value="";
-    selectorCuartoColor.value="";
-    selectorQuintoColor.value="";
-    selectorSestoColor.value="";
-    primerColor="";
-    segundoColor="";
-    tercerColor="";
-    cuartoColor="";
+    try{
+        nuevaResistencia = new resistenciaCuatro(primerColor,segundoColor,tercerColor,cuartoColor);
+
+        console.log (nuevaResistencia.calcularCuatroBandas(),nuevaResistencia.unidadResCuatro(),nuevaResistencia.ToleranciaCuatroBandas()); 
+        listaResistencia.push(' Resistencia de '+nuevaResistencia.calcularCuatroBandas()+nuevaResistencia.unidadResCuatro()+" con "+nuevaResistencia.ToleranciaCuatroBandas()+" de Tolerancia  ");   
+        mostrarValor=document.getElementById("valorResistivo");
+        mostrarValor.value= ('Resistencia de '+nuevaResistencia.calcularCuatroBandas()+nuevaResistencia.unidadResCuatro()+" con "+ nuevaResistencia.ToleranciaCuatroBandas()+" de Tolerancia");
+        listaResistenciaJSON= JSON.stringify(listaResistencia);
+        localStorage.setItem("listaResistencia",listaResistenciaJSON);
+        selectorPrimerColor.value="";
+        selectorSegundoColor.value="";
+        selectorTercerColor.value="";
+        selectorCuartoColor.value="";
+        selectorQuintoColor.value="";
+        selectorSestoColor.value="";
+        primerColor="";
+        segundoColor="";
+        tercerColor="";
+        cuartoColor="";
+
+        fetch("resistenciasComerciales.json")
+        .then( response=> response.json())
+        .then(data => {
+
+            for(let i=0; i<data.resistenciasComerciales.length; i++){
+                
+                let valorCalculado= nuevaResistencia.calcularCuatroBandas();
+                let unidadCalculada=nuevaResistencia.unidadResCuatro();
+                let valorComercial= data.resistenciasComerciales[i].valor;
+                let unidadComercial=data.resistenciasComerciales[i].unidad;
+
+                if(unidadCalculada == 'Ω' && unidadComercial == 'Ω'){
+                    let calculo= Math.abs(valorCalculado-valorComercial)
+                    if(calculo <= 40 ){
+                        console.log(valorComercial+unidadComercial);
+                        
+                    }
+                }
+               
+            }
+        })
+
+    }
+    catch(error){
+        Swal.fire({
+            icon: 'error',
+            title: 'Oops...',
+            text: 'NO INGRESO LOS COLORES DE LAS BANDAS!',
+            footer: 'Ingrese los colores de las bandas y presione Calcular nuevamente'
+          })         
+    }
+
 });
 
 let btnCalcularCincoBandas= document.getElementById("btnCalcularCincoBandas");
 
 btnCalcularCincoBandas.addEventListener("click", (e)=>{ 
 
+
+    try{
     nuevaResistencia = new resistenciaCinco(primerColor,segundoColor,tercerColor,cuartoColorDos,quintoColor);
-    console.log (nuevaResistencia.calcularCincoBandas()  +" con "+nuevaResistencia.ToleranciaCincoBandas()); 
-    listaResistencia.push('  Resistencia de '+nuevaResistencia.calcularCincoBandas()+" con "+nuevaResistencia.ToleranciaCincoBandas()+"de Tolerancia  "); 
+    console.log (nuevaResistencia.calcularCincoBandas()+nuevaResistencia.unidadResCinco()+" con "+nuevaResistencia.ToleranciaCincoBandas()); 
+    listaResistencia.push('  Resistencia de '+nuevaResistencia.calcularCincoBandas()+nuevaResistencia.unidadResCinco()+" con "+nuevaResistencia.ToleranciaCincoBandas()+"de Tolerancia  "); 
     mostrarValor=document.getElementById("valorResistivo");
-    mostrarValor.value= ('Resistencia de '+nuevaResistencia.calcularCincoBandas() +" con "+ nuevaResistencia.ToleranciaCincoBandas()+" de Tolerancia");
+    mostrarValor.value= ('Resistencia de '+nuevaResistencia.calcularCincoBandas()+nuevaResistencia.unidadResCinco()+" con "+ nuevaResistencia.ToleranciaCincoBandas()+" de Tolerancia");
     listaResistenciaJSON= JSON.stringify(listaResistencia);
     localStorage.setItem("listaResistencia",listaResistenciaJSON);
     selectorPrimerColor.value="";
@@ -285,11 +344,22 @@ btnCalcularCincoBandas.addEventListener("click", (e)=>{
     cuartoColorDos="";
     quintoColor="";
     sestoColor="";
+    }
+    catch(error){
+        Swal.fire({
+            icon: 'error',
+            title: 'Oops...',
+            text: 'NO INGRESO LOS COLORES DE LAS BANDAS!',
+            footer: 'Ingrese los colores de las bandas y presione Calcular nuevamente'
+          })   
+    }
+    
 }); 
 
 let btnCalcularSeisBandas= document.getElementById("btnCalcularSeisBandas");
-
 btnCalcularSeisBandas.addEventListener("click", (e)=>{
+
+    try{
     nuevaResistencia = new resistenciaCinco(primerColor,segundoColor,tercerColor,cuartoColorDos,quintoColor,sestoColor);
     console.log (nuevaResistencia.calcularCincoBandas(),nuevaResistencia.ToleranciaCincoBandas(),nuevaResistencia.coeficienteDeTemperatura()); 
     listaResistencia.push(' Resistencia de '+nuevaResistencia.calcularCincoBandas()+" con "+nuevaResistencia.ToleranciaCincoBandas()+" de Tolerancia con un coeficiente de temperatura de " +nuevaResistencia.coeficienteDeTemperatura(),"  "); 
@@ -303,44 +373,71 @@ btnCalcularSeisBandas.addEventListener("click", (e)=>{
     selectorCuartoColorDos.value="";
     selectorQuintoColor.value="";
     selectorSestoColor.value="";
+    }
+    catch(error){
+        Swal.fire({
+            icon: 'error',
+            title: 'Oops...',
+            text: 'NO INGRESO LOS COLORES DE LAS BANDAS!',
+            footer: 'Ingrese los colores de las bandas y presione Calcular nuevamente'
+          })      
+    }
+
 });
 
 
 let btnHistorial=document.getElementById("btnHistorial");
-
 btnHistorial.addEventListener("click", (e)=>{
+     
+        let arregloHistorial=localStorage.getItem("listaResistencia");
+        arregloHistorial = JSON.parse(arregloHistorial);
+        console.log(arregloHistorial);
+        const lista = document.getElementById("parrafohistorial");
+        const fragmento =document.createDocumentFragment();
+        const parrafo_historial = document.createElement("p");
+        const borrarHistorial =document.getElementById("parrafohistorial");
+        borrarHistorial.innerHTML = "";
+        parrafo_historial.textContent=arregloHistorial;
+        parrafo_historial.Id='parrafoHistorial';
+        console.log(parrafo_historial);
+        fragmento.appendChild(parrafo_historial);
+        lista.appendChild(fragmento);
 
-    let arregloHistorial=localStorage.getItem("listaResistencia");
-    arregloHistorial = JSON.parse(arregloHistorial);
-    console.log(arregloHistorial);
-    const lista = document.getElementById("parrafohistorial");
-    const fragmento =document.createDocumentFragment();
-    const parrafo_historial = document.createElement("p");
-    const borrarHistorial =document.getElementById("parrafohistorial");
-    borrarHistorial.innerHTML = "";
-    parrafo_historial.textContent=arregloHistorial;
-    parrafo_historial.Id='parrafoHistorial';
-    console.log(parrafo_historial);
-    fragmento.appendChild(parrafo_historial);
-    lista.appendChild(fragmento);
 
 }); 
 
 let clearHistorial=document.getElementById("clearHistorial");
-
 clearHistorial.addEventListener("click", (e)=>{
 
-    localStorage.clear();
-    listaResistencia=[];
-    const borrarHistorial =document.getElementById("parrafohistorial");
-    borrarHistorial.innerHTML = "";
-    mostrarValor.value="";
-    first_Band.style.backgroundColor= "";
-    second_Band.style.backgroundColor= "";
-    third_Band.style.backgroundColor= "";
-    fourth_Band.style.backgroundColor= "";
-    fifth_Band.style.backgroundColor= "";
-    sixth_Band.style.backgroundColor= "";
+    try{
+        localStorage.clear();
+        listaResistencia=[];
+        const borrarHistorial =document.getElementById("parrafohistorial");
+        borrarHistorial.innerHTML = "";
+        mostrarValor.value="";
+        first_Band.style.backgroundColor= "";
+        second_Band.style.backgroundColor= "";
+        third_Band.style.backgroundColor= "";
+        fourth_Band.style.backgroundColor= "";
+        fifth_Band.style.backgroundColor= "";
+        sixth_Band.style.backgroundColor= "";
+    }
+
+    catch(error){
+        Swal.fire({
+            icon: 'error',
+            title: 'Oops...',
+            text: 'NO HAY HISTORIAL PARA BORRAR',
+            footer: 'Debe generar un nuevo historial para poder borrarlo'
+          })      
+    }
+
 });
+
+
+
+
+    
+
 
 
