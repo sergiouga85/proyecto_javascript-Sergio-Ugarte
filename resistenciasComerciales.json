@@ -4,716 +4,628 @@
     "primeraBanda":"Marron",
     "segundaBanda":"Negro",
     "terceraBanda":"Oro",
-    "valor":1,
-    "unidad":"Ω"
+    "valor":"1Ω"
     },
     {
     "id":"2",
     "primeraBanda":"Marron",
     "segundaBanda":"Negro",
     "terceraBanda":"Negro",
-    "valor":10,
-    "unidad":"Ω"
+    "valor":"10Ω"
     },
     {
     "id":"4",
     "primeraBanda":"Marron",
     "segundaBanda":"Negro",
     "terceraBanda":"Marron",
-    "valor":100,
-    "unidad":"Ω"
+    "valor":"100Ω"
     },
     {
     "id":"5",
     "primeraBanda":"Marron",
     "segundaBanda":"Negro",
     "terceraBanda":"Rojo",
-    "valor":1,
-    "unidad":"KΩ"
+    "valor":"1KΩ"
     },
     {
     "id":"6",
     "primeraBanda":"Marron",
     "segundaBanda":"Negro",
     "terceraBanda":"Naranja",
-    "valor":10,
-    "unidad":"KΩ"
+    "valor":"10KΩ"
     },
     {
     "id":"7",
     "primeraBanda":"Marron",
     "segundaBanda":"Negro",
     "terceraBanda":"Amarillo",
-    "valor":100,
-    "unidad":"KΩ"
+    "valor":"100KΩ"
     },
     {
     "id":"8",
     "primeraBanda":"Marron",
     "segundaBanda":"Negro",
     "terceraBanda":"Verde",
-    "valor":1,
-    "unidad":"MΩ"
+    "valor":"1MΩ"
     },
     {
     "id":"9",
     "primeraBanda":"Marron",
     "segundaBanda":"Rojo",
     "terceraBanda":"Oro",
-    "valor":1.2,
-    "unidad":"Ω"
+    "valor":"1.2Ω"
     },
     {
     "id":"10",
     "primeraBanda":"Marron",
     "segundaBanda":"Rojo",
     "terceraBanda":"Negro",
-    "valor":12,
-    "unidad":"Ω"
+    "valor":"12Ω"
     },
     {
     "id":"11",
     "primeraBanda":"Marron",
     "segundaBanda":"Rojo",
     "terceraBanda":"Marron",
-    "valor":120,
-    "unidad":"Ω"
+    "valor":"120Ω"
     },
     {
     "id":"12",
     "primeraBanda":"Marron",
     "segundaBanda":"Rojo",
     "terceraBanda":"Rojo",
-    "valor":1.2,
-    "unidad":"KΩ"
+    "valor":"1.2KΩ"
     },
     {
     "id":"13",
     "primeraBanda":"Marron",
     "segundaBanda":"Rojo",
     "terceraBanda":"Naranja",
-    "valor":12,
-    "unidad":"KΩ"
+    "valor":"12KΩ"
     },
     {
     "id":"14",
     "primeraBanda":"Marron",
     "segundaBanda":"Rojo",
     "terceraBanda":"Amarillo",
-    "valor":120,
-    "unidad":"KΩ"
+    "valor":"120KΩ"
     },
     {"id":"15",
     "primeraBanda":"Marron",
     "segundaBanda":"Rojo",
     "terceraBanda":"Verde",
-    "valor":1.2,
-    "unidad":"MΩ"
+    "valor":"1.2MΩ"
     },
     {
     "id":"16",
     "primeraBanda":"Marron",
     "segundaBanda":"Verde",
     "terceraBanda":"Oro",
-    "valor":1.5,
-    "unidad":"Ω"
+    "valor":"1.5Ω"
     },
     {
     "id":"17",
     "primeraBanda":"Marron",
     "segundaBanda":"Verde",
     "terceraBanda":"Negro",
-    "valor":15,
-    "unidad":"Ω"
+    "valor":"15Ω"
     },
     {
     "id":"18","primeraBanda":"Marron",
     "segundaBanda":"Verde",
     "terceraBanda":"Marron",
-    "valor":150,
-    "unidad":"Ω"
+    "valor":"150Ω"
     },
     {
     "id":"17",
     "primeraBanda":"Marron",
     "segundaBanda":"Verde",
     "terceraBanda":"Rojo",
-    "valor":1.5,
-    "unidad":"KΩ"
+    "valor":"1.5KΩ"
     },
     {"id":"19",
     "primeraBanda":"Marron",
     "segundaBanda":"Verde",
     "terceraBanda":"Naranja",
-    "valor":15,
-    "unidad":"KΩ"
+    "valor":"15KΩ"
     },
     {
     "id":"20",
     "primeraBanda":"Marron",
     "segundaBanda":"Verde",
     "terceraBanda":"Amarillo",
-    "valor":150,
-    "unidad":"KΩ"
+    "valor":"150KΩ"
     },
     {"id":"21",
     "primeraBanda":"Marron",
     "segundaBanda":"Verde",
     "terceraBanda":"Verde",
-    "valor":1.5,
-    "unidad":"MΩ"},
+    "valor":"1.5MΩ"
+    },
     {
     "id":"22",
     "primeraBanda":"Marron",
     "segundaBanda":"Gris",
     "terceraBanda":"Oro",
-    "valor":1.8,
-    "unidad":"Ω"
+    "valor":"1.8Ω"
     },
     {
     "id":"23",
     "primeraBanda":"Marron",
     "segundaBanda":"Gris",
     "terceraBanda":"Negro",
-    "valor":18,
-    "unidad":"Ω"
+    "valor":"18Ω"
     },
     {
     "id":"24",
     "primeraBanda":"Marron",
     "segundaBanda":"Gris",
     "terceraBanda":"Marron",
-    "valor":180,
-    "unidad":"Ω"},
+    "valor":"180Ω"
+    },
     {
     "id":"25",
     "primeraBanda":"Marron",
     "segundaBanda":"Gris",
     "terceraBanda":"Rojo",
-    "valor":1.8,
-    "unidad":"KΩ"
+    "valor":"1.8KΩ"
     },
     {
     "id":"26",
     "primeraBanda":"Marron",
     "segundaBanda":"Gris",
     "terceraBanda":"Naranja",
-    "valor":18,
-    "unidad":"KΩ"
+    "valor":"18KΩ"
     },
     {
     "id":"27",
     "primeraBanda":"Marron",
     "segundaBanda":"Gris",
     "terceraBanda":"Amarillo",
-    "valor":180,
-    "unidad":"KΩ"
+    "valor":"180KΩ"
     },
     {
     "id":"28",
     "primeraBanda":"Marron",
     "segundaBanda":"Gris",
     "terceraBanda":"Verde",
-    "valor":1.8,
-    "unidad":"MΩ"
+    "valor":"1.8MΩ"
     },
     {
     "id":"29",
     "primeraBanda":"Rojo",
     "segundaBanda":"Rojo",
     "terceraBanda":"Oro",
-    "valor":2.2,
-    "unidad":"Ω"
+    "valor":"2.2Ω"
     },
     {
     "id":"30",
     "primeraBanda":"Rojo",
     "segundaBanda":"Rojo",
     "terceraBanda":"Nergo",
-    "valor":22,
-    "unidad":"Ω"
+    "valor":"22Ω"
     },
     {
     "id":"31",
     "primeraBanda":"Rojo",
     "segundaBanda":"Rojo",
     "terceraBanda":"Marron",
-    "valor":220,
-    "unidad":"Ω"
+    "valor":"220Ω"
     },
     {
     "id":"32",
     "primeraBanda":"Rojo",
     "segundaBanda":"Rojo",
     "terceraBanda":"Rojo",
-    "valor":2.2,
-    "unidad":"KΩ"
+    "valor":"2.2KΩ"
     },
     {
     "id":"33",
     "primeraBanda":"Rojo",
     "segundaBanda":"Rojo",
     "terceraBanda":"Naranja",
-    "valor":22,
-    "unidad":"KΩ"
+    "valor":"22KΩ"
     },
     {
     "id":"34",
     "primeraBanda":"Rojo",
     "segundaBanda":"Rojo",
     "terceraBanda":"Amarillo",
-    "valor":220,
-    "unidad":"KΩ"
+    "valor":"220KΩ"
     },
     {
     "id":"35",
     "primeraBanda":"Rojo",
     "segundaBanda":"Rojo",
     "terceraBanda":"Verde",
-    "valor":2.2,
-    "unidad":"MΩ"
+    "valor":"2.2MΩ"
     },
     {
     "id":"36",
     "primeraBanda":"Rojo",
     "segundaBanda":"Violeta",
     "terceraBanda":"Oro",
-    "valor":2.7,
-    "unidad":"Ω"
+    "valor":"2.7Ω"
     },
     {"id":"37",
     "primeraBanda":"Rojo",
     "segundaBanda":"Violeta",
     "terceraBanda":"Negro",
-    "valor":27,
-    "unidad":"Ω"
+    "valor":"27Ω"
     },
     {
     "id":"38",
     "primeraBanda":"Rojo",
     "segundaBanda":"Violeta",
     "terceraBanda":"Marron",
-    "valor":270,
-    "unidad":"Ω"
+    "valor":"270Ω"
     },
     {
     "id":"39",
     "primeraBanda":"Rojo",
     "segundaBanda":"Violeta",
     "terceraBanda":"Rojo",
-    "valor":2.7,
-    "unidad":"KΩ"
+    "valor":"2.7KΩ"
     },
     {
     "id":"40",
     "primeraBanda":"Rojo",
     "segundaBanda":"Violeta",
     "terceraBanda":"Naranja",
-    "valor":27,
-    "unidad":"KΩ"
+    "valor":"27KΩ"
     },
     {
     "id":"41",
     "primeraBanda":"Rojo",
     "segundaBanda":"Violeta",
     "terceraBanda":"Amarillo",
-    "valor":270,
-    "unidad":"KΩ"
+    "valor":"270KΩ"
     },
     {"id":"42",
     "primeraBanda":"Rojo",
     "segundaBanda":"Violeta",
     "terceraBanda":"Verde",
-    "valor":2.7,
-    "unidad":"MΩ"
+    "valor":"2.7MΩ"
     },
     {
     "id":"43",
     "primeraBanda":"Naranja",
     "segundaBanda":"Naranja",
     "terceraBanda":"Oro",
-    "valor":3.3,
-    "unidad":"Ω"
+    "valor":"3.3Ω"
     },
     {
     "id":"44",
     "primeraBanda":"Naranja",
     "segundaBanda":"Naranja",
     "terceraBanda":"Negro",
-    "valor":33,
-    "unidad":"Ω"
+    "valor":"33Ω"
     },
     {
     "id":"45",
     "primeraBanda":"Naranja",
     "segundaBanda":"Naranja",
     "terceraBanda":"Marron",
-    "valor":330,
-    "unidad":"Ω"
+    "valor":"330Ω"
     },
     {
     "id":"46",
     "primeraBanda":"Naranja",
     "segundaBanda":"Naranja",
     "terceraBanda":"Rojo",
-    "valor":3.3,
-    "unidad":"KΩ"
+    "valor":"3.3 KΩ"
     },
     {
     "id":"47",
     "primeraBanda":"Naranja",
     "segundaBanda":"Naranja",
     "terceraBanda":"Naranja",
-    "valor":33,
-    "unidad":"KΩ"
+    "valor":"33KΩ"
     },
     {
     "id":"48",
     "primeraBanda":"Naranja",
     "segundaBanda":"Naranja",
     "terceraBanda":"Amarillo",
-    "valor":330,
-    "unidad":"KΩ"
+    "valor":"330KΩ"
     },
     {
     "id":"49",
     "primeraBanda":"Naranja",
     "segundaBanda":"Naranja",
     "terceraBanda":"Verde",
-    "valor":3.3,
-    "unidad":"MΩ"
+    "valor":"3.3MΩ"
     },
     {
     "id":"50",
     "primeraBanda":"Naranja",
     "segundaBanda":"Blanco",
     "terceraBanda":"Oro",
-    "valor":3.9,
-    "unidad":"Ω"
+    "valor":"3.9Ω"
     },
     {
     "id":"51",
     "primeraBanda":"Naranja",
     "segundaBanda":"Blanco",
     "terceraBanda":"Negro",
-    "valor":39,
-    "unidad":"Ω"
+    "valor":"39Ω"
     },
     {
     "id":"52",
     "primeraBanda":"Naranja",
     "segundaBanda":"Blanco",
     "terceraBanda":"Marron",
-    "valor":390,
-    "unidad":"Ω"
+    "valor":"390Ω"
     },
     {
     "id":"53",
     "primeraBanda":"Naranja",
     "segundaBanda":"Blanco",
     "terceraBanda":"Rojo",
-    "valor":3.9,
-    "unidad":"KΩ"
+    "valor":"3.9KΩ"
     },
     {
     "id":"54",
     "primeraBanda":"Naranja",
     "segundaBanda":"Blanco",
     "terceraBanda":"Naranja",
-    "valor":39,
-    "unidad":"KΩ"
+    "valor":"39KΩ"
     },
     {
     "id":"55",
     "primeraBanda":"Naranja",
     "segundaBanda":"Blanco",
     "terceraBanda":"Amarillo",
-    "valor":390,
-    "unidad":"KΩ"
+    "valor":"390KΩ"
     },
     {"id":"56",
     "primeraBanda":"Naranja",
     "segundaBanda":"Blanco",
     "terceraBanda":"Verde",
-    "valor":3.9,
-    "unidad":"MΩ"
+    "valor":"3.9MΩ"
     },
     {
     "id":"57",
     "primeraBanda":"Amarillo",
     "segundaBanda":"Violeta",
     "terceraBanda":"Oro",
-    "valor":4.7,
-    "unidad":"Ω"
+    "valor":"4.7Ω"
     },
     {
     "id":"58",
     "primeraBanda":"Amarillo",
     "segundaBanda":"Violeta",
     "terceraBanda":"Negro",
-    "valor":47,
-    "unidad":"Ω"
+    "valor":"47Ω"
     },
     {"id":"59",
     "primeraBanda":"Amarillo",
     "segundaBanda":"Violeta",
     "terceraBanda":"Marron",
-    "valor":470,
-    "unidad":"Ω"
+    "valor":"470Ω"
     },
     {
     "id":"60",
     "primeraBanda":"Amarillo",
     "segundaBanda":"Violeta",
     "terceraBanda":"Rojo",
-    "valor":4.7,
-    "unidad":"KΩ"
+    "valor":"4.7KΩ"
     },
     {"id":"61",
     "primeraBanda":"Amarillo",
     "segundaBanda":"Violeta",
     "terceraBanda":"Naranja",
-    "valor":47,
-    "unidad":"KΩ"
+    "valor":"47KΩ"
     },
     {
     "id":"62",
     "primeraBanda":"Amarillo",
     "segundaBanda":"Violeta",
     "terceraBanda":"Amarillo",
-    "valor":470,
-    "unidad":"KΩ"
+    "valor":"470KΩ"
     },
     {
     "id":"63",
     "primeraBanda":"Amarillo",
     "segundaBanda":"Violeta",
     "terceraBanda":"Verde",
-    "valor":4.7,
-    "unidad":"MΩ"
+    "valor":"4.7MΩ"
     },
     {
     "id":"64",
     "primeraBanda":"Verde",
     "segundaBanda":"Azul",
     "terceraBanda":"Oro",
-    "valor":5.6,
-    "unidad":"Ω"
+    "valor":"5.6Ω"
     },
     {
     "id":"65",
     "primeraBanda":"Verde",
     "segundaBanda":"Azul",
     "terceraBanda":"Negro",
-    "valor":56,
-    "unidad":"Ω"
+    "valor":"56Ω"
     },
     {
     "id":"66",
     "primeraBanda":"Verde",
     "segundaBanda":"Azul",
     "terceraBanda":"Marron",
-    "valor":560,
-    "unidad":"Ω"
+    "valor":"560Ω"
     },
     {
     "id":"67",
     "primeraBanda":"Verde",
     "segundaBanda":"Azul",
     "terceraBanda":"Rojo",
-    "valor":5.6,
-    "unidad":"KΩ"
+    "valor":"5.6KΩ"
     },
     {
     "id":"68",
     "primeraBanda":"Verde",
     "segundaBanda":"Azul",
     "terceraBanda":"Naranja",
-    "valor":56,
-    "unidad":"KΩ"
+    "valor":"56KΩ"
     },
     {
     "id":"69",
     "primeraBanda":"Verde",
     "segundaBanda":"Azul",
     "terceraBanda":"Amarillo",
-    "valor":560,
-    "unidad":"KΩ"
+    "valor":"560KΩ"
     },
     {
     "id":"70",
     "primeraBanda":"Verde",
     "segundaBanda":"Azul",
     "terceraBanda":"Verde",
-    "valor":5.6,
-    "unidad":"MΩ"
+    "valor":"5.6MΩ"
     },
     {
     "id":"71",
     "primeraBanda":"Azul",
     "segundaBanda":"Gris",
     "terceraBanda":"Oro",
-    "valor":6.8,
-    "unidad":"Ω"
+    "valor":"6.8Ω"
     },
     {
     "id":"72",
     "primeraBanda":"Azul",
     "segundaBanda":"Gris",
     "terceraBanda":"Negro",
-    "valor":68,
-    "unidad":"Ω"
+    "valor":"68Ω"
     },
     {
     "id":"73",
     "primeraBanda":"Azul",
     "segundaBanda":"Gris",
     "terceraBanda":"Marron",
-    "valor":680,
-    "unidad":"Ω"
+    "valor":"680Ω"
     },
     {
     "id":"74",
     "primeraBanda":"Azul",
     "segundaBanda":"Gris",
     "terceraBanda":"Rojo",
-    "valor":6.8,
-    "unidad":"KΩ"
+    "valor":"6.8KΩ"
     },
     {
     "id":"75",
     "primeraBanda":"Azul",
     "segundaBanda":"Gris",
     "terceraBanda":"Naranja",
-    "valor":68,
-    "unidad":"KΩ"
+    "valor":"68KΩ"
     },
     {
     "id":"76",
     "primeraBanda":"Azul",
     "segundaBanda":"Gris",
     "terceraBanda":"Amarillo",
-    "valor":680,
-    "unidad":"KΩ"
+    "valor":"680KΩ"
     },
     {
     "id":"77",
     "primeraBanda":"Azul",
     "segundaBanda":"Gris",
     "terceraBanda":"Verde",
-    "valor":6.8,
-    "unidad":"MΩ"
+    "valor":"6.8MΩ"
     },
     {
     "id":"78",
     "primeraBanda":"Gris",
     "segundaBanda":"Rojo",
     "terceraBanda":"Oro",
-    "valor":8.2,
-    "unidad":"Ω"
+    "valor":"8.2Ω"
     },
     {
     "id":"79",
     "primeraBanda":"Gris",
     "segundaBanda":"Rojo",
     "terceraBanda":"Negro",
-    "valor":82,
-    "unidad":"Ω"
+    "valor":"82Ω"
     },
     {
     "id":"80",
     "primeraBanda":"Gris",
     "segundaBanda":"Rojo",
     "terceraBanda":"Marron",
-    "valor":820,
-    "unidad":"Ω"
+    "valor":"820Ω"
     },
     {
     "id":"81",
     "primeraBanda":"Gris",
     "segundaBanda":"Rojo",
     "terceraBanda":"Rojo",
-    "valor":8.2,
-    "unidad":"KΩ"
+    "valor":"8.2KΩ"
     },
     {
     "id":"82",
     "primeraBanda":"Gris",
     "segundaBanda":"Rojo",
     "terceraBanda":"Naranja",
-    "valor":82,
-    "unidad":"KΩ"
+    "valor":"82KΩ"
     },
     {
     "id":"83",
     "primeraBanda":"Gris",
     "segundaBanda":"Rojo",
     "terceraBanda":"Amarillo",
-    "valor":820,
-    "unidad":"KΩ"
+    "valor":"820KΩ"
     },
     {
     "id":"84",
     "primeraBanda":"Gris",
     "segundaBanda":"Rojo",
     "terceraBanda":"Verde",
-    "valor":8.2,
-    "unidad":"MΩ"
+    "valor":"8.2MΩ"
     },
     {
     "id":"85",
     "primeraBanda":"Blanco",
     "segundaBanda":"Negro",
     "terceraBanda":"Oro",
-    "valor":9.1,
-    "unidad":"Ω"
+    "valor":"9.1Ω"
     },
     {
     "id":"86",
     "primeraBanda":"Blanco",
     "segundaBanda":"Negro",
     "terceraBanda":"Negro",
-    "valor":91,
-    "unidad":"Ω"
+    "valor":"91Ω"
     },
     {
     "id":"87",
     "primeraBanda":"Blanco",
     "segundaBanda":"Negro",
     "terceraBanda":"Marron",
-    "valor":910,
-    "unidad":"Ω"
+    "valor":"910Ω"
     },
     {
     "id":"88",
     "primeraBanda":"Blanco",
     "segundaBanda":"Negro",
     "terceraBanda":"Rojo",
-    "valor":9.1,
-    "unidad":"KΩ"
+    "valor":"9.1KΩ"
     },
     {
     "id":"89",
     "primeraBanda":"Blanco",
     "segundaBanda":"Negro",
     "terceraBanda":"Naranja",
-    "valor":91,
-    "unidad":"KΩ"
+    "valor":"91KΩ"
     },
     {
     "id":"90",
     "primeraBanda":"Blanco",
     "segundaBanda":"Negro",
     "terceraBanda":"Amarillo",
-    "valor":910,
-    "unidad":"KΩ"
+    "valor":"910KΩ"
     },
     {
     "id":"91",
     "primeraBanda":"Blanco",
     "segundaBanda":"Negro",
     "terceraBanda":"Verde",
-    "valor":9.1,
-    "unidad":"MΩ"}
+    "valor":"9.1MΩ"
+    }
 ]}
 

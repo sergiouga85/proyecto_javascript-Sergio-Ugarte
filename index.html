@@ -143,7 +143,7 @@
                                 <option value= 'silver'>Plata</option>
                             </select>
                         </div>
-                        <div class="campo" id="sestaBandaRes" style="display:none"> 
+                        <div class="campo" id="sestaBandaRes" > 
                             <label for="opciones">6.ª banda de color (Coef.Temperatura)</label>
                                 <select id="sestaBanda" class="form-select" aria-label="Default select example">
                                 <option value="">-- Selecciona una opción --</option>
@@ -160,13 +160,15 @@
                         </div>
                         <div  class="input-group mb-3">
                             <input  id="valorResistivo" type="text" class="form-control" value= " " aria-label="Text input with segmented dropdown button">
+                        </div>
+                        <div id="valorComercial"style="display:none">
+                            <div class="campo">
+                                <label for="opciones">Valor comercial en ohms[Ω]</label>
+                            </div>
+                            <div  class="input-group mb-3">
+                                <input  id="mostrarValorComercial" type="text" class="form-control" value= " " aria-label="Text input with segmented dropdown button">
+                            </div>
                         </div> 
-                        <div class="campo">
-                            <label for="opciones">Valor comercial en ohms[Ω]</label>
-                        </div>
-                        <div  class="input-group mb-3">
-                            <input  id="valorComercial" type="text" class="form-control" value= " " aria-label="Text input with segmented dropdown button">
-                        </div>
                         <div>
                             <button id="btnCalcularCuatroBandas"  type="button" class="btn btn-primary">Calcular</button>
                         </div>
