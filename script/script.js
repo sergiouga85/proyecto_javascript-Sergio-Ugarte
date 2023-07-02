@@ -232,10 +232,6 @@ class resistenciaCinco {
         return ValorDeResistenciaCinco;
     }
 
-    unidadResCinco(){
-        return unidad
-    }
-
     ToleranciaCincoBandas(){   
         let bandaCinco = Tolerancia.find((obj_Tolerancia)=> obj_Tolerancia.color == this.quintoColor).porcentaje;
         return bandaCinco
