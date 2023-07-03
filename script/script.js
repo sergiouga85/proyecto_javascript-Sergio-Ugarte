@@ -43,6 +43,13 @@ let mostrarCuatroBandas=selectorCuatroBandas.addEventListener("click",(e)=>{
     diagramaResistenciaDos.style.display='none';
     let diagramaResistenciaTres=document.getElementById("resistenciaTres");
     diagramaResistenciaTres.style.display='none';
+    first_Band.style.backgroundColor="";
+    second_Band.style.backgroundColor="";
+    third_Band.style.backgroundColor="";
+    fourth_Band.style.backgroundColor="";
+    fifth_Band.style.backgroundColor="";
+    sixth_Band.style.backgroundColor="";
+    mostrarValor.value="";
 });
 
 let selectorCincoBandas=document.getElementById("btnCincoBandas");
@@ -70,7 +77,13 @@ let mostrarCincoBandas=selectorCincoBandas.addEventListener("click",(e)=>{
     diagramaResistenciaDos.style.display='block';
     let diagramaResistenciaTres=document.getElementById("resistenciaTres");
     diagramaResistenciaTres.style.display='none';
-
+    first_Band.style.backgroundColor="";
+    second_Band.style.backgroundColor="";
+    third_Band.style.backgroundColor="";
+    fourth_Band.style.backgroundColor="";
+    fifth_Band.style.backgroundColor="";
+    sixth_Band.style.backgroundColor="";
+    mostrarValor.value="";
 });
 
 let selectorSeisBandas=document.getElementById("btnSeisBandas");
@@ -98,6 +111,13 @@ let mostrarSeisBandas=selectorSeisBandas.addEventListener("click",(e)=>{
     diagramaResistenciaDos.style.display='none';
     let diagramaResistenciaTres=document.getElementById("resistenciaTres");
     diagramaResistenciaTres.style.display='block';
+    first_Band.style.backgroundColor="";
+    second_Band.style.backgroundColor="";
+    third_Band.style.backgroundColor="";
+    fourth_Band.style.backgroundColor="";
+    fifth_Band.style.backgroundColor="";
+    sixth_Band.style.backgroundColor="";
+    mostrarValor.value="";
 });
 
     
