@@ -4,628 +4,628 @@
     "primeraBanda":"Marron",
     "segundaBanda":"Negro",
     "terceraBanda":"Oro",
-    "valor":"1Ω"
+    "valor":1
     },
     {
     "id":"2",
     "primeraBanda":"Marron",
     "segundaBanda":"Negro",
     "terceraBanda":"Negro",
-    "valor":"10Ω"
+    "valor":10
     },
     {
     "id":"4",
     "primeraBanda":"Marron",
     "segundaBanda":"Negro",
     "terceraBanda":"Marron",
-    "valor":"100Ω"
+    "valor":100
     },
     {
     "id":"5",
     "primeraBanda":"Marron",
     "segundaBanda":"Negro",
     "terceraBanda":"Rojo",
-    "valor":"1KΩ"
+    "valor":1
     },
     {
     "id":"6",
     "primeraBanda":"Marron",
     "segundaBanda":"Negro",
     "terceraBanda":"Naranja",
-    "valor":"10KΩ"
+    "valor":10
     },
     {
     "id":"7",
     "primeraBanda":"Marron",
     "segundaBanda":"Negro",
     "terceraBanda":"Amarillo",
-    "valor":"100KΩ"
+    "valor":100
     },
     {
     "id":"8",
     "primeraBanda":"Marron",
     "segundaBanda":"Negro",
     "terceraBanda":"Verde",
-    "valor":"1MΩ"
+    "valor":1
     },
     {
     "id":"9",
     "primeraBanda":"Marron",
     "segundaBanda":"Rojo",
     "terceraBanda":"Oro",
-    "valor":"1.2Ω"
+    "valor":1.2
     },
     {
     "id":"10",
     "primeraBanda":"Marron",
     "segundaBanda":"Rojo",
     "terceraBanda":"Negro",
-    "valor":"12Ω"
+    "valor":12
     },
     {
     "id":"11",
     "primeraBanda":"Marron",
     "segundaBanda":"Rojo",
     "terceraBanda":"Marron",
-    "valor":"120Ω"
+    "valor":120
     },
     {
     "id":"12",
     "primeraBanda":"Marron",
     "segundaBanda":"Rojo",
     "terceraBanda":"Rojo",
-    "valor":"1.2KΩ"
+    "valor":1.2
     },
     {
     "id":"13",
     "primeraBanda":"Marron",
     "segundaBanda":"Rojo",
     "terceraBanda":"Naranja",
-    "valor":"12KΩ"
+    "valor":12
     },
     {
     "id":"14",
     "primeraBanda":"Marron",
     "segundaBanda":"Rojo",
     "terceraBanda":"Amarillo",
-    "valor":"120KΩ"
+    "valor":120
     },
     {"id":"15",
     "primeraBanda":"Marron",
     "segundaBanda":"Rojo",
     "terceraBanda":"Verde",
-    "valor":"1.2MΩ"
+    "valor":1.2
     },
     {
     "id":"16",
     "primeraBanda":"Marron",
     "segundaBanda":"Verde",
     "terceraBanda":"Oro",
-    "valor":"1.5Ω"
+    "valor":1.5
     },
     {
     "id":"17",
     "primeraBanda":"Marron",
     "segundaBanda":"Verde",
     "terceraBanda":"Negro",
-    "valor":"15Ω"
+    "valor":15
     },
     {
     "id":"18","primeraBanda":"Marron",
     "segundaBanda":"Verde",
     "terceraBanda":"Marron",
-    "valor":"150Ω"
+    "valor":150
     },
     {
     "id":"17",
     "primeraBanda":"Marron",
     "segundaBanda":"Verde",
     "terceraBanda":"Rojo",
-    "valor":"1.5KΩ"
+    "valor":1.5
     },
     {"id":"19",
     "primeraBanda":"Marron",
     "segundaBanda":"Verde",
     "terceraBanda":"Naranja",
-    "valor":"15KΩ"
+    "valor":15
     },
     {
     "id":"20",
     "primeraBanda":"Marron",
     "segundaBanda":"Verde",
     "terceraBanda":"Amarillo",
-    "valor":"150KΩ"
+    "valor":150
     },
     {"id":"21",
     "primeraBanda":"Marron",
     "segundaBanda":"Verde",
     "terceraBanda":"Verde",
-    "valor":"1.5MΩ"
+    "valor":1.5
     },
     {
     "id":"22",
     "primeraBanda":"Marron",
     "segundaBanda":"Gris",
     "terceraBanda":"Oro",
-    "valor":"1.8Ω"
+    "valor":1.8
     },
     {
-    "id":"23",
+    "id":23,
     "primeraBanda":"Marron",
     "segundaBanda":"Gris",
     "terceraBanda":"Negro",
-    "valor":"18Ω"
+    "valor":18
     },
     {
-    "id":"24",
+    "id":24,
     "primeraBanda":"Marron",
     "segundaBanda":"Gris",
     "terceraBanda":"Marron",
-    "valor":"180Ω"
+    "valor":180
     },
     {
     "id":"25",
     "primeraBanda":"Marron",
     "segundaBanda":"Gris",
     "terceraBanda":"Rojo",
-    "valor":"1.8KΩ"
+    "valor":18
     },
     {
     "id":"26",
     "primeraBanda":"Marron",
     "segundaBanda":"Gris",
     "terceraBanda":"Naranja",
-    "valor":"18KΩ"
+    "valor":18
     },
     {
     "id":"27",
     "primeraBanda":"Marron",
     "segundaBanda":"Gris",
     "terceraBanda":"Amarillo",
-    "valor":"180KΩ"
+    "valor":180
     },
     {
     "id":"28",
     "primeraBanda":"Marron",
     "segundaBanda":"Gris",
     "terceraBanda":"Verde",
-    "valor":"1.8MΩ"
+    "valor":1.8
     },
     {
     "id":"29",
     "primeraBanda":"Rojo",
     "segundaBanda":"Rojo",
     "terceraBanda":"Oro",
-    "valor":"2.2Ω"
+    "valor":2.2
     },
     {
     "id":"30",
     "primeraBanda":"Rojo",
     "segundaBanda":"Rojo",
     "terceraBanda":"Nergo",
-    "valor":"22Ω"
+    "valor":22
     },
     {
     "id":"31",
     "primeraBanda":"Rojo",
     "segundaBanda":"Rojo",
     "terceraBanda":"Marron",
-    "valor":"220Ω"
+    "valor":220
     },
     {
     "id":"32",
     "primeraBanda":"Rojo",
     "segundaBanda":"Rojo",
     "terceraBanda":"Rojo",
-    "valor":"2.2KΩ"
+    "valor":2.2
     },
     {
     "id":"33",
     "primeraBanda":"Rojo",
     "segundaBanda":"Rojo",
     "terceraBanda":"Naranja",
-    "valor":"22KΩ"
+    "valor":22
     },
     {
     "id":"34",
     "primeraBanda":"Rojo",
     "segundaBanda":"Rojo",
     "terceraBanda":"Amarillo",
-    "valor":"220KΩ"
+    "valor":220
     },
     {
     "id":"35",
     "primeraBanda":"Rojo",
     "segundaBanda":"Rojo",
     "terceraBanda":"Verde",
-    "valor":"2.2MΩ"
+    "valor":2.2
     },
     {
     "id":"36",
     "primeraBanda":"Rojo",
     "segundaBanda":"Violeta",
     "terceraBanda":"Oro",
-    "valor":"2.7Ω"
+    "valor":2.7
     },
     {"id":"37",
     "primeraBanda":"Rojo",
     "segundaBanda":"Violeta",
     "terceraBanda":"Negro",
-    "valor":"27Ω"
+    "valor":27
     },
     {
     "id":"38",
     "primeraBanda":"Rojo",
     "segundaBanda":"Violeta",
     "terceraBanda":"Marron",
-    "valor":"270Ω"
+    "valor":270
     },
     {
     "id":"39",
     "primeraBanda":"Rojo",
     "segundaBanda":"Violeta",
     "terceraBanda":"Rojo",
-    "valor":"2.7KΩ"
+    "valor":2.7
     },
     {
     "id":"40",
     "primeraBanda":"Rojo",
     "segundaBanda":"Violeta",
     "terceraBanda":"Naranja",
-    "valor":"27KΩ"
+    "valor":27
     },
     {
     "id":"41",
     "primeraBanda":"Rojo",
     "segundaBanda":"Violeta",
     "terceraBanda":"Amarillo",
-    "valor":"270KΩ"
+    "valor":270
     },
     {"id":"42",
     "primeraBanda":"Rojo",
     "segundaBanda":"Violeta",
     "terceraBanda":"Verde",
-    "valor":"2.7MΩ"
+    "valor":2.7
     },
     {
     "id":"43",
     "primeraBanda":"Naranja",
     "segundaBanda":"Naranja",
     "terceraBanda":"Oro",
-    "valor":"3.3Ω"
+    "valor":3.3
     },
     {
     "id":"44",
     "primeraBanda":"Naranja",
     "segundaBanda":"Naranja",
     "terceraBanda":"Negro",
-    "valor":"33Ω"
+    "valor":33
     },
     {
     "id":"45",
     "primeraBanda":"Naranja",
     "segundaBanda":"Naranja",
     "terceraBanda":"Marron",
-    "valor":"330Ω"
+    "valor":330
     },
     {
     "id":"46",
     "primeraBanda":"Naranja",
     "segundaBanda":"Naranja",
     "terceraBanda":"Rojo",
-    "valor":"3.3 KΩ"
+    "valor":3.3
     },
     {
     "id":"47",
     "primeraBanda":"Naranja",
     "segundaBanda":"Naranja",
     "terceraBanda":"Naranja",
-    "valor":"33KΩ"
+    "valor":33
     },
     {
     "id":"48",
     "primeraBanda":"Naranja",
     "segundaBanda":"Naranja",
     "terceraBanda":"Amarillo",
-    "valor":"330KΩ"
+    "valor":330
     },
     {
     "id":"49",
     "primeraBanda":"Naranja",
     "segundaBanda":"Naranja",
     "terceraBanda":"Verde",
-    "valor":"3.3MΩ"
+    "valor":3.3
     },
     {
     "id":"50",
     "primeraBanda":"Naranja",
     "segundaBanda":"Blanco",
     "terceraBanda":"Oro",
-    "valor":"3.9Ω"
+    "valor":3.9
     },
     {
     "id":"51",
     "primeraBanda":"Naranja",
     "segundaBanda":"Blanco",
     "terceraBanda":"Negro",
-    "valor":"39Ω"
+    "valor":39
     },
     {
     "id":"52",
     "primeraBanda":"Naranja",
     "segundaBanda":"Blanco",
     "terceraBanda":"Marron",
-    "valor":"390Ω"
+    "valor":390
     },
     {
     "id":"53",
     "primeraBanda":"Naranja",
     "segundaBanda":"Blanco",
     "terceraBanda":"Rojo",
-    "valor":"3.9KΩ"
+    "valor":"3.9"
     },
     {
     "id":"54",
     "primeraBanda":"Naranja",
     "segundaBanda":"Blanco",
     "terceraBanda":"Naranja",
-    "valor":"39KΩ"
+    "valor":39
     },
     {
     "id":"55",
     "primeraBanda":"Naranja",
     "segundaBanda":"Blanco",
     "terceraBanda":"Amarillo",
-    "valor":"390KΩ"
+    "valor":390
     },
     {"id":"56",
     "primeraBanda":"Naranja",
     "segundaBanda":"Blanco",
     "terceraBanda":"Verde",
-    "valor":"3.9MΩ"
+    "valor":"3.9"
     },
     {
     "id":"57",
     "primeraBanda":"Amarillo",
     "segundaBanda":"Violeta",
     "terceraBanda":"Oro",
-    "valor":"4.7Ω"
+    "valor":4.7
     },
     {
     "id":"58",
     "primeraBanda":"Amarillo",
     "segundaBanda":"Violeta",
     "terceraBanda":"Negro",
-    "valor":"47Ω"
+    "valor":"47"
     },
     {"id":"59",
     "primeraBanda":"Amarillo",
     "segundaBanda":"Violeta",
     "terceraBanda":"Marron",
-    "valor":"470Ω"
+    "valor":470
     },
     {
     "id":"60",
     "primeraBanda":"Amarillo",
     "segundaBanda":"Violeta",
     "terceraBanda":"Rojo",
-    "valor":"4.7KΩ"
+    "valor":4.7
     },
     {"id":"61",
     "primeraBanda":"Amarillo",
     "segundaBanda":"Violeta",
     "terceraBanda":"Naranja",
-    "valor":"47KΩ"
+    "valor":47
     },
     {
     "id":"62",
     "primeraBanda":"Amarillo",
     "segundaBanda":"Violeta",
     "terceraBanda":"Amarillo",
-    "valor":"470KΩ"
+    "valor":470
     },
     {
     "id":"63",
     "primeraBanda":"Amarillo",
     "segundaBanda":"Violeta",
     "terceraBanda":"Verde",
-    "valor":"4.7MΩ"
+    "valor":4.7
     },
     {
     "id":"64",
     "primeraBanda":"Verde",
     "segundaBanda":"Azul",
     "terceraBanda":"Oro",
-    "valor":"5.6Ω"
+    "valor":5.6
     },
     {
     "id":"65",
     "primeraBanda":"Verde",
     "segundaBanda":"Azul",
     "terceraBanda":"Negro",
-    "valor":"56Ω"
+    "valor":56
     },
     {
     "id":"66",
     "primeraBanda":"Verde",
     "segundaBanda":"Azul",
     "terceraBanda":"Marron",
-    "valor":"560Ω"
+    "valor":560
     },
     {
     "id":"67",
     "primeraBanda":"Verde",
     "segundaBanda":"Azul",
     "terceraBanda":"Rojo",
-    "valor":"5.6KΩ"
+    "valor":5.6
     },
     {
     "id":"68",
     "primeraBanda":"Verde",
     "segundaBanda":"Azul",
     "terceraBanda":"Naranja",
-    "valor":"56KΩ"
+    "valor":56
     },
     {
     "id":"69",
     "primeraBanda":"Verde",
     "segundaBanda":"Azul",
     "terceraBanda":"Amarillo",
-    "valor":"560KΩ"
+    "valor":560
     },
     {
     "id":"70",
     "primeraBanda":"Verde",
     "segundaBanda":"Azul",
     "terceraBanda":"Verde",
-    "valor":"5.6MΩ"
+    "valor":5.6
     },
     {
     "id":"71",
     "primeraBanda":"Azul",
     "segundaBanda":"Gris",
     "terceraBanda":"Oro",
-    "valor":"6.8Ω"
+    "valor":6.8
     },
     {
     "id":"72",
     "primeraBanda":"Azul",
     "segundaBanda":"Gris",
     "terceraBanda":"Negro",
-    "valor":"68Ω"
+    "valor":68
     },
     {
     "id":"73",
     "primeraBanda":"Azul",
     "segundaBanda":"Gris",
     "terceraBanda":"Marron",
-    "valor":"680Ω"
+    "valor":680
     },
     {
     "id":"74",
     "primeraBanda":"Azul",
     "segundaBanda":"Gris",
     "terceraBanda":"Rojo",
-    "valor":"6.8KΩ"
+    "valor":6.8
     },
     {
     "id":"75",
     "primeraBanda":"Azul",
     "segundaBanda":"Gris",
     "terceraBanda":"Naranja",
-    "valor":"68KΩ"
+    "valor":68
     },
     {
     "id":"76",
     "primeraBanda":"Azul",
     "segundaBanda":"Gris",
     "terceraBanda":"Amarillo",
-    "valor":"680KΩ"
+    "valor":680
     },
     {
     "id":"77",
     "primeraBanda":"Azul",
     "segundaBanda":"Gris",
     "terceraBanda":"Verde",
-    "valor":"6.8MΩ"
+    "valor":6.8
     },
     {
     "id":"78",
     "primeraBanda":"Gris",
     "segundaBanda":"Rojo",
     "terceraBanda":"Oro",
-    "valor":"8.2Ω"
+    "valor":8.2
     },
     {
     "id":"79",
     "primeraBanda":"Gris",
     "segundaBanda":"Rojo",
     "terceraBanda":"Negro",
-    "valor":"82Ω"
+    "valor":82
     },
     {
     "id":"80",
     "primeraBanda":"Gris",
     "segundaBanda":"Rojo",
     "terceraBanda":"Marron",
-    "valor":"820Ω"
+    "valor":820
     },
     {
     "id":"81",
     "primeraBanda":"Gris",
     "segundaBanda":"Rojo",
     "terceraBanda":"Rojo",
-    "valor":"8.2KΩ"
+    "valor":8.2
     },
     {
     "id":"82",
     "primeraBanda":"Gris",
     "segundaBanda":"Rojo",
     "terceraBanda":"Naranja",
-    "valor":"82KΩ"
+    "valor":82
     },
     {
     "id":"83",
     "primeraBanda":"Gris",
     "segundaBanda":"Rojo",
     "terceraBanda":"Amarillo",
-    "valor":"820KΩ"
+    "valor":820
     },
     {
     "id":"84",
     "primeraBanda":"Gris",
     "segundaBanda":"Rojo",
     "terceraBanda":"Verde",
-    "valor":"8.2MΩ"
+    "valor":8.2
     },
     {
     "id":"85",
     "primeraBanda":"Blanco",
     "segundaBanda":"Negro",
     "terceraBanda":"Oro",
-    "valor":"9.1Ω"
+    "valor":9.1
     },
     {
     "id":"86",
     "primeraBanda":"Blanco",
     "segundaBanda":"Negro",
     "terceraBanda":"Negro",
-    "valor":"91Ω"
+    "valor":91
     },
     {
     "id":"87",
     "primeraBanda":"Blanco",
     "segundaBanda":"Negro",
     "terceraBanda":"Marron",
-    "valor":"910Ω"
+    "valor":910
     },
     {
     "id":"88",
     "primeraBanda":"Blanco",
     "segundaBanda":"Negro",
     "terceraBanda":"Rojo",
-    "valor":"9.1KΩ"
+    "valor":9.1
     },
     {
     "id":"89",
     "primeraBanda":"Blanco",
     "segundaBanda":"Negro",
     "terceraBanda":"Naranja",
-    "valor":"91KΩ"
+    "valor":91
     },
     {
     "id":"90",
     "primeraBanda":"Blanco",
     "segundaBanda":"Negro",
     "terceraBanda":"Amarillo",
-    "valor":"910KΩ"
+    "valor":910
     },
     {
     "id":"91",
     "primeraBanda":"Blanco",
     "segundaBanda":"Negro",
     "terceraBanda":"Verde",
-    "valor":"9.1MΩ"
+    "valor":9.1
     }
 ]}
 
