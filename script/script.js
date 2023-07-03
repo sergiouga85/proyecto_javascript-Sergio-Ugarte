@@ -254,20 +254,11 @@ class resistenciaCinco {
         let bandaDos = Resistencia.find((obj_Resistencia)=> obj_Resistencia.color == this.segundoColor).numero;
         let bandaTres = Resistencia.find((obj_Resistencia)=> obj_Resistencia.color == this.tercerColor).numero;
         let bandaCuatro = Resistencia.find((obj_Resistencia)=> obj_Resistencia.color == this.cuartoColorDos).multiplicador;
-        
-        let ValorDeResistenciaCinco = (bandaUno+bandaDos+bandaTres)* bandaCuatro;
-        if(ValorDeResistenciaCinco == 3.3000000000000003 || ValorDeResistenciaCinco ==6.6000000000000005){
-            return (ValorDeResistenciaCinco).toFixed(1)
-         } else{
-         return ValorDeResistenciaCinco
-         }     
-    }
-
-    unidadResCinco(){
         let unidad= Resistencia.find((obj_Resistencia)=> obj_Resistencia.color == this.cuartoColorDos).unidad;
-        return unidad;
+        let ValorDeResistenciaCinco = (bandaUno+bandaDos+bandaTres)* bandaCuatro+unidad;
+        return ValorDeResistenciaCinco         
     }
-
+    
     ToleranciaCincoBandas(){   
         let bandaCinco = Tolerancia.find((obj_Tolerancia)=> obj_Tolerancia.color == this.quintoColor).porcentaje;
         return bandaCinco
@@ -338,20 +329,18 @@ btnCalcularCuatroBandas.addEventListener("click", (e)=>{
             footer: 'Ingrese los colores de las bandas y presione Calcular nuevamente'
           })         
     }
-
 });
 
 let btnCalcularCincoBandas= document.getElementById("btnCalcularCincoBandas");
 
 btnCalcularCincoBandas.addEventListener("click", (e)=>{ 
 
-
     try{
     nuevaResistencia = new resistenciaCinco(primerColor,segundoColor,tercerColor,cuartoColorDos,quintoColor);
-    console.log (nuevaResistencia.calcularCincoBandas(),nuevaResistencia.unidadResCinco(),nuevaResistencia.ToleranciaCincoBandas()); 
-    listaResistencia.push('  Resistencia de '+nuevaResistencia.calcularCincoBandas()+nuevaResistencia.unidadResCinco()+" con "+nuevaResistencia.ToleranciaCincoBandas()+"de tolerancia  "); 
+    console.log (nuevaResistencia.calcularCincoBandas(),nuevaResistencia.ToleranciaCincoBandas()); 
+    listaResistencia.push('  Resistencia de '+nuevaResistencia.calcularCincoBandas()+" con "+nuevaResistencia.ToleranciaCincoBandas()+"de tolerancia  "); 
     mostrarValor=document.getElementById("valorResistivo");
-    mostrarValor.value= ('Resistencia de '+nuevaResistencia.calcularCincoBandas()+nuevaResistencia.unidadResCinco()+" con "+ nuevaResistencia.ToleranciaCincoBandas()+" de tolerancia");
+    mostrarValor.value= ('Resistencia de '+nuevaResistencia.calcularCincoBandas()+" con "+ nuevaResistencia.ToleranciaCincoBandas()+" de tolerancia");
     listaResistenciaJSON= JSON.stringify(listaResistencia);
     localStorage.setItem("listaResistencia",listaResistenciaJSON);
     selectorPrimerColor.value="";
@@ -382,10 +371,10 @@ btnCalcularSeisBandas.addEventListener("click", (e)=>{
 
     try{
     nuevaResistencia = new resistenciaCinco(primerColor,segundoColor,tercerColor,cuartoColorDos,quintoColor,sestoColor);
-    console.log (nuevaResistencia.calcularCincoBandas(),+nuevaResistencia.unidadResCinco(),nuevaResistencia.ToleranciaCincoBandas(),nuevaResistencia.coeficienteDeTemperatura()); 
-    listaResistencia.push(' Resistencia de '+nuevaResistencia.calcularCincoBandas()+nuevaResistencia.unidadResCinco()+" con "+nuevaResistencia.ToleranciaCincoBandas()+" de tolerancia con un coeficiente de temperatura de " +nuevaResistencia.coeficienteDeTemperatura(),"  "); 
+    console.log (nuevaResistencia.calcularCincoBandas(),nuevaResistencia.ToleranciaCincoBandas(),nuevaResistencia.coeficienteDeTemperatura()); 
+    listaResistencia.push(' Resistencia de '+nuevaResistencia.calcularCincoBandas()+" con "+nuevaResistencia.ToleranciaCincoBandas()+" de tolerancia con un coeficiente de temperatura de " +nuevaResistencia.coeficienteDeTemperatura(),"  "); 
     mostrarValor=document.getElementById("valorResistivo");
-    mostrarValor.value= ('Resistencia de '+nuevaResistencia.calcularCincoBandas()+nuevaResistencia.unidadResCinco()+" con "+ nuevaResistencia.ToleranciaCincoBandas()+" de tolerancia con un coeficiente de temperatura de " + nuevaResistencia.coeficienteDeTemperatura());
+    mostrarValor.value= ('Resistencia de '+nuevaResistencia.calcularCincoBandas()+" con "+ nuevaResistencia.ToleranciaCincoBandas()+" de tolerancia con un coeficiente de temperatura de " + nuevaResistencia.coeficienteDeTemperatura());
     listaResistenciaJSON= JSON.stringify(listaResistencia);
     localStorage.setItem("listaResistencia",listaResistenciaJSON);
     selectorPrimerColor.value="";
@@ -406,7 +395,6 @@ btnCalcularSeisBandas.addEventListener("click", (e)=>{
 
 });
 
-
 let btnHistorial=document.getElementById("btnHistorial");
 btnHistorial.addEventListener("click", (e)=>{
      
@@ -423,8 +411,6 @@ btnHistorial.addEventListener("click", (e)=>{
         console.log(parrafo_historial);
         fragmento.appendChild(parrafo_historial);
         lista.appendChild(fragmento);
-
-
 }); 
 
 let clearHistorial=document.getElementById("clearHistorial");
